@@ -12,5 +12,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "permissions": ["http://localhost:3000"]
+  "permissions": ["http://localhost:3000", "alarms", "https://longevity-qa-kappa.vercel.app/"]
 }
