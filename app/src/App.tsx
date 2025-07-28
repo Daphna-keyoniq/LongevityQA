@@ -5,6 +5,11 @@ import TextBox from "./components/TextBox.tsx"; // Import the TextBox component
 import "./styles/App.css"; // Import the CSS file
 // import Button from "./components/Button.tsx"; // Import the Button component
 import Loader from "./components/Loader.tsx";
+// import 'ldrs/helix'
+
+// // Manually defined
+// import { helix } from 'ldrs'
+// helix.register("l-helix")
 
 /**
  * The main application component for the Longevity Question & Answering App.
@@ -85,13 +90,15 @@ const LongevityQAApp: React.FC = () => {
       <div style={{ marginTop: "20px" }}>
         <h2>Answer:</h2>
         <p>{answer}</p>
-        {isLoading && (
+        {isLoading && 
+        (
             <Loader
               loading={isLoading} // Pass the loading state
               message="Processing your question..." // Custom message
               siz="medium" // Custom size (e.g., "small", "medium", "large")
             />
-          )}
+          )
+          }
       </div>
       )}
     </div>

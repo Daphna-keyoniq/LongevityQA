@@ -1,6 +1,10 @@
 import React from 'react'
 import {ClipLoader} from "react-spinners";
+import 'ldrs/helix'
 
+// Manually defined
+import { helix } from 'ldrs'
+helix.register("l-helix")
 
 interface LoaderProps {
     loading: boolean;
@@ -19,16 +23,9 @@ interface LoaderProps {
   
     return (
       <div style={{ textAlign: "center", marginTop: "10px" }}>
-        <div
-          style={{
-            ...sizeStyles[siz],
-            border: "4px solid #ccc",
-            borderTop: "4px solid #54769D",
-            borderRadius: "50%",
-            animation: "spin 1s linear infinite",
-            margin: "0 auto",
-          }}
-        ></div>
+        <div>
+          {loading && <l-helix color="#54769D"></l-helix>}
+        </div>
         {message && <p style={{ marginTop: "10px", color: "#54769D" }}>{message}</p>}
         <style>
           {`
