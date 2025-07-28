@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 interface ButtonProps {
-  type?: "button" | "submit" | "reset"; // Button type
+  type: "submit";
   children: React.ReactNode; // Button content
   style?: React.CSSProperties; // Custom styles
   disabled?: boolean; // Disabled state
 }
 
-const Button: React.FC<ButtonProps> = ({ type = "button", children, style, disabled = false }) => {
+const Button: React.FC<ButtonProps> = ({ type, children, style, disabled = false }) => {
   const [buttonColor, setButtonColor] = useState<string>("#54769D"); // Initial button color
 
   const handleButtonClick = () => {
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ type = "button", children, style, disab
 
   return (
     <button
-      type={type}
+      type="submit"
       onClick={handleButtonClick}
       disabled={disabled}
       style={{

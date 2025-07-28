@@ -12,38 +12,6 @@ from crews.simple_qa_crew.qa_crew import SimpleQACrew
 from models.outputs import Answer
 from utils.logging import get_logger
 
-# import aisuite as ai
-
-# urls = [
-#     "https://lilianweng.github.io/posts/2023-06-23-agent/",
-#     "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
-#     "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
-# ]
-
-# research_agent = Agent(
-#     role="You are a helpful assistant that can answer questions about the web.",
-#     goal="Answer the user's question.",
-#     backstory="You have access to a vast knowledge base of information from the web.",
-#     tools=[
-#       WebsiteSearchTool(website=urls[0]),
-#       WebsiteSearchTool(website=urls[1]),
-#       WebsiteSearchTool(website=urls[2]),
-#     ],
-#     llm="gpt-4o-mini",
-# )
-
-# task = Task(
-#   description="Answer the following question: {question}",
-#   expected_output="A detailed and accurate answer to the user's question.",
-#   agent=research_agent,
-# )
-
-# crew = Crew(
-#     agents=[research_agent],
-#     tasks=[task],
-# )
-
-# # A simple dictionary-based QA model
 class QAState(BaseModel):
   """
   State for the documentation flow
@@ -67,11 +35,11 @@ class LongevityQAFlow(Flow[QAState]):
 
 
   @start()
-  async def process_question(self):
+  def process_question(self):
     self.logger.info("Processing question")
 
     qa_crew = SimpleQACrew()
-    input_parser_result: Answer = await qa_crew.kickoff(inputs={"question": self.state.question})
+    input_parser_result: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
     self.state.answer = input_parser_result.pydantic
 
     self.logger.info("Processing input completed")

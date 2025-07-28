@@ -60,7 +60,7 @@ class SimpleQACrew:
         )
 
     @log_execution_time
-    async def kickoff(self, inputs: dict, **kwargs):
+    def kickoff(self, inputs: dict, **kwargs):
         """Override kickoff to add input validation"""
         self.logger.info(
             "Starting Simple QA Crew kickoff",
