@@ -1,0 +1,210 @@
+**Acarbose**  
+- **Benefits and Recommended Use:**  
+  - Acarbose is used primarily for type 2 diabetes and has cardioprotective effects. It helps in metabolic syndrome by reducing triglyceride levels and weight in obese or overweight patients. It can delay the development of type 2 diabetes in patients with impaired glucose tolerance.
+  - Dosage: 25, 50, and 100 mg tablets; maximum dose is 50 mg q8hr for individuals <60 kg and 100 mg q8hr for those >60 kg.
+- **Relevant Demographics:**  
+  - Patients with type 2 diabetes, metabolic syndrome, or impaired glucose tolerance.
+- **Risks and Side Effects:**  
+  - Common side effects include gastrointestinal symptoms like flatulence, abdominal distension, and diarrhea.
+- **Interactions:**  
+  - Acarbose can affect glycemic control when combined with alcohol and reduce the absorption of digoxin and metformin.
+
+**3-Acetyl-7-Oxo-Dehydroepiandrosterone (7-oxo-DHEA)**  
+- **Benefits and Recommended Use:**  
+  - Used for bodyweight and body fat reduction and increasing lean body mass. Dosing ranges from 200 to 400 mg daily.
+- **Relevant Demographics:**  
+  - Overweight individuals looking to reduce body fat and increase lean mass.
+- **Risks and Side Effects:**  
+  - Does not alter sex hormone levels.
+- **Interactions:**  
+  - No noted drug interactions.
+
+**ATP**  
+- **Benefits and Recommended Use:**  
+  - Used to increase strength, power, improve body composition, and cardiovascular health. Safe dosing ranges from 100 to 400 mg daily.
+- **Relevant Demographics:**  
+  - Athletes and individuals looking to improve physical performance.
+- **Risks and Side Effects:**  
+  - Potential risk of hyperuricemia, a factor for gout.
+- **Interactions:**  
+  - No known interactions with medication.
+
+**Alpha Lipoic Acid (ALA)**  
+- **Benefits and Recommended Use:**  
+  - Used for diabetic neuropathy, Alzheimer’s disease, and as an analgesic. Effective dosing ranges from 600 to 1800 mg daily.
+- **Relevant Demographics:**  
+  - Patients with diabetic neuropathy or Alzheimer’s disease.
+- **Risks and Side Effects:**  
+  - Side effects include gastrointestinal distress, headaches, and possible hypoglycemia. May cause mineral shortages.
+- **Interactions:**  
+  - Interacts with Valproic Acid and should be dosed separately from chelating medications.
+
+**Alpha-Tocopherol (Vitamin E)**  
+- **Benefits and Recommended Use:**  
+  - Antioxidant used to prevent oxidative stress-related conditions. Dosing ranges from 400 to 2000 IU/day.
+- **Relevant Demographics:**  
+  - Individuals at risk for oxidative stress-related conditions.
+- **Risks and Side Effects:**  
+  - Increased risk for prostate cancer and low birthweight in pregnancy.
+- **Interactions:**  
+  - Dependent on Vitamin C, Vitamin B3, selenium, and glutathione.
+
+**Arginine-Alpha-Ketoglutarate (AAKG)**  
+- **Benefits and Recommended Use:**  
+  - Used for muscle hypertrophy.
+- **Relevant Demographics:**  
+  - Athletes and bodybuilders.
+- **Risks and Side Effects:**  
+  - Adverse events include palpitations, dizziness, and vomiting.
+- **Interactions:**  
+  - No documented interactions with other medications.
+
+**Ascorbic Acid (Vitamin C)**  
+- **Benefits and Recommended Use:**  
+  - Used for scurvy, macular degeneration, and respiratory infections. Recommended dietary allowance is 90 mg for men and 75 mg for women.
+- **Relevant Demographics:**  
+  - Individuals with vitamin C deficiency or at risk for related conditions.
+- **Risks and Side Effects:**  
+  - Caution in sodium-restricted diets and renal disease.
+- **Interactions:**  
+  - Interacts with aspirin, fluphenazine, and can increase iron absorption.
+
+**Biotin (Vitamin B7)**  
+- **Benefits and Recommended Use:**  
+  - Used for hair and nail health. Dosage ranges up to 500–1000 μg daily.
+- **Relevant Demographics:**  
+  - Individuals with biotin deficiency.
+- **Risks and Side Effects:**  
+  - Potential interference with lab tests.
+- **Interactions:**  
+  - Interacts with anticonvulsants and can interfere with hormone assays.
+
+**Bitter Orange**  
+- **Benefits and Recommended Use:**  
+  - Used for weight loss. Effective dose of synephrine is 32 mg daily.
+- **Relevant Demographics:**  
+  - Individuals seeking weight loss.
+- **Risks and Side Effects:**  
+  - Risks include cardiovascular effects and interactions with certain medications.
+- **Interactions:**  
+  - Interacts with drugs metabolized by CYP3A4.
+
+**Blue-Green Algae**  
+- **Benefits and Recommended Use:**  
+  - Marketed for high nutritive value and various health claims.
+- **Relevant Demographics:**  
+  - Individuals seeking nutritional supplements.
+- **Risks and Side Effects:**  
+  - Potential for hepatotoxins and neurotoxins.
+- **Interactions:**  
+  - No well-documented interactions.
+
+**Caffeine**  
+- **Benefits and Recommended Use:**  
+  - Used to enhance exercise performance and cognitive function.
+- **Relevant Demographics:**  
+  - Athletes and individuals seeking cognitive enhancement.
+- **Risks and Side Effects:**  
+  - High doses can cause gastrointestinal upset and nervousness.
+- **Interactions:**  
+  - Interacts with medications metabolized by P450 1A2.
+
+**Calcium**  
+- **Benefits and Recommended Use:**  
+  - Used for bone health and prevention of osteoporosis.
+- **Relevant Demographics:**  
+  - Individuals at risk for osteoporosis.
+- **Risks and Side Effects:**  
+  - Gastrointestinal events and potential myocardial infarction risk.
+- **Interactions:**  
+  - Contraindicated with ceftriaxone.
+
+**Catechin**  
+- **Benefits and Recommended Use:**  
+  - Marketed as an antioxidant and weight loss supplement.
+- **Relevant Demographics:**  
+  - Individuals seeking antioxidant benefits.
+- **Risks and Side Effects:**  
+  - Potential hepatotoxicity.
+- **Interactions:**  
+  - Caution in patients with liver problems.
+
+**Chitosan**  
+- **Benefits and Recommended Use:**  
+  - Used for weight loss and cholesterol-lowering.
+- **Relevant Demographics:**  
+  - Individuals seeking weight loss or cholesterol management.
+- **Risks and Side Effects:**  
+  - Reduction in vitamin and mineral absorption.
+- **Interactions:**  
+  - Potentiates warfarin effect.
+
+**Chlorogenic Acid**  
+- **Benefits and Recommended Use:**  
+  - Used for weight loss and blood pressure reduction.
+- **Relevant Demographics:**  
+  - Individuals seeking weight loss or blood pressure management.
+- **Risks and Side Effects:**  
+  - Allergic reactions in sensitive individuals.
+- **Interactions:**  
+  - Interacts with antihypertensives and metformin.
+
+**Chromium**  
+- **Benefits and Recommended Use:**  
+  - Used for diabetes and hyperlipidemia management.
+- **Relevant Demographics:**  
+  - Individuals with diabetes or hyperlipidemia.
+- **Risks and Side Effects:**  
+  - Mild adverse effects like headaches and irritability.
+- **Interactions:**  
+  - Interacts with insulin and metformin.
+
+**Coenzyme Q10**  
+- **Benefits and Recommended Use:**  
+  - Used for mitochondrial dysfunction and heart health.
+- **Relevant Demographics:**  
+  - Individuals with heart disease or mitochondrial dysfunction.
+- **Risks and Side Effects:**  
+  - Mild side effects like diarrhea and nausea.
+- **Interactions:**  
+  - Interacts with warfarin and antihypertensives.
+
+**Colostrum**  
+- **Benefits and Recommended Use:**  
+  - Used for immune defense and gastrointestinal issues.
+- **Relevant Demographics:**  
+  - Individuals with immune or gastrointestinal concerns.
+- **Risks and Side Effects:**  
+  - Mild side effects like nausea and diarrhea.
+- **Interactions:**  
+  - May alter NSAID effectiveness.
+
+**Conjugated Linoleic Acid (CLA)**  
+- **Benefits and Recommended Use:**  
+  - Used for weight loss and blood pressure management.
+- **Relevant Demographics:**  
+  - Individuals seeking weight loss or blood pressure management.
+- **Risks and Side Effects:**  
+  - Mild side effects like flatulence and nausea.
+- **Interactions:**  
+  - No known interactions.
+
+**Copper**  
+- **Benefits and Recommended Use:**  
+  - Used for copper deficiency and bone health.
+- **Relevant Demographics:**  
+  - Individuals with copper deficiency.
+- **Risks and Side Effects:**  
+  - Copper toxicity in high doses.
+- **Interactions:**  
+  - Interacts with amino acids and dietary factors.
+
+**Creatine**  
+- **Benefits and Recommended Use:**  
+  - Used for exercise performance and muscle strength.
+- **Relevant Demographics:**  
+  - Athletes and individuals seeking muscle enhancement.
+- **Risks and Side Effects:**  
+  - Side effects include stomach pain and cramping.
+- **Interactions:**  
+  - Interacts with fenugreek and Coenzyme Q10.

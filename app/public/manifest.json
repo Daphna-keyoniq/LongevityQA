@@ -1,0 +1,16 @@
+{
+  "short_name": "LongevityQA",
+  "name": "Longevity QA ChatBot",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/ico"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "permissions": ["http://localhost:3000"]
+}

@@ -1,0 +1,27 @@
+Input Text:
+-------------
+page_content='1 Iron . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1  
+Tanja Grubić Kezele  
+2 Copper . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Miguel Arredondo, Mauricio González and Mauricio Latorre  
+3 Selenium . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63  
+Halyna Antonyak, Ruslana Iskra, Natalia Panas and Roman Lysiuk  
+4 Zinc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99  
+John H. Beattie, Marco Malavolta and Irina Korichneva  
+5 Chromium in Health and Longevity . . . . . . . . . . . . . . . . . . . . . . . . 133
+Ruslana Iskra and Halyna Antonyak  
+6 Boron in Aging and Longevity . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Forrest H. Nielsen  
+7 Molybdenum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+Yosef Dror and Felicia Stern  
+8 Water and Sodium Balance Disorders in Aging . . . . . . . . . . . . . . . 209
+Massimo Boemi and Maria Paola Luconi  
+9 Magnesium Role in Health and Longevity . . . . . . . . . . . . . . . . . . . 235
+Mario Barbagallo and Ligia J. Dominguez  
+10 Iodine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 265  
+Halyna Antonyak, Ruslana Iskra and Roman Lysiuk  
+11 The Nadir Range of the U-Shaped Curve . . . . . . . . . . . . . . . . . . . . 303
+Yosef Dror, Shmuel M. Giveon and Felicia Stern  
+Index . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 327  
+ix  
+-----' metadata={'Header 2': 'Trace Elements and Minerals in Health and Longevity', 'Header 4': 'Contents'}

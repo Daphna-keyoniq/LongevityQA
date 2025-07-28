@@ -1,0 +1,36 @@
+**Cancer**
+
+**12.1 Introduction**  
+Nutraceuticals, including isolated nutrients like ω-3 fatty acids, β-carotene, gingerol, glucosamine, curcumin, ginseng, lycopene, and folic acid, as well as herbal products and natural bioactive foods, offer health benefits beyond basic nutrition. They are used to address chronic diseases, particularly those associated with aging, such as neurological disorders, cardiovascular disease, type 2 diabetes, osteoarthritis, and cancer. These supplements are gaining popularity due to their potential therapeutic benefits and fewer side effects compared to conventional therapies.
+
+**12.2 Classes of Nutraceuticals/Functional Foods, Extraction and Their Delivery**  
+Nutraceuticals are categorized into phenolic compounds, carotenoids, organosulfur compounds, polyunsaturated fatty acids, minerals, and vitamins. These compounds are known for their roles in preventing and alleviating aging-associated diseases. For example, phenolic compounds like quercetin and resveratrol have antioxidant properties, while carotenoids like lycopene and β-carotene protect against oxidative stress. Polyunsaturated fatty acids, such as eicosapentaenoic acid, have anti-inflammatory effects. Minerals like zinc and selenium support antioxidant enzyme functions. Vitamins C and E are known for their free radical scavenging properties.
+
+**12.3 Current State of Knowledge About Nutraceuticals/Functional Foods**  
+Nutraceuticals are being explored for their potential in treating long-term diseases where pharmaceuticals may not be suitable. They are considered for personalized nutrition, especially for preventing aging-associated diseases. However, they should not replace a healthy diet and regular exercise. There is a need for more research to establish their efficacy and safety.
+
+**12.4 Role of Nutraceuticals/Functional Foods in Delaying the Aging Process**  
+Nutraceuticals with antioxidant or anti-inflammatory activities are promising in modulating the aging process. They can stabilize mitochondrial membranes, enhance metal chelation, and induce apoptosis of senescent cells. Compounds like epigallocatechin gallate and ginsenoside mimic anti-aging drugs like metformin and rapamycin. They also improve gut flora balance and lower blood cholesterol levels.
+
+**12.5 Nutraceuticals and Functional Foods Role in Reducing Aging-Associated Diseases**  
+
+**12.5.1 Parkinson’s Disease**  
+Nutraceuticals like epigallocatechin-3-gallate, curcumin, and resveratrol have shown neuroprotective roles in Parkinson’s disease by reducing oxidative stress and mitochondrial dysfunction. Lycopene and Coenzyme Q10 also offer protective effects.
+
+**12.5.2 Alzheimer’s Disease**  
+Phenolic compounds, curcumin, and genistein have antioxidant properties that may reduce the risk of Alzheimer’s disease. Resveratrol and carotenoids like lycopene offer neuroprotection by modulating enzyme activities.
+
+**12.5.3 Cardiovascular Disease**  
+Nutraceuticals like catechins, curcumin, and lycopene help control atherosclerosis and reduce cardiovascular disease risk by lowering inflammation and cholesterol levels. Eicosapentaenoic acid reduces serum triglycerides.
+
+**12.5.4 Type 2 Diabetes**  
+Nutraceuticals like epigallocatechin-3-gallate, monounsaturated and polyunsaturated fatty acids, chromium, and zinc improve glucose metabolism and insulin sensitivity, offering benefits in managing type 2 diabetes.
+
+**12.5.5 Osteoarthritis**  
+Compounds like epigallocatechin gallate, curcumin, and procyanidins have anti-inflammatory and chondroprotective effects, reducing osteoarthritis pain. Fatty acids and vitamins C and E also contribute to pain management.
+
+**12.5.6 Cancer**  
+Nutraceuticals like curcumin, resveratrol, genistein, and lycopene have potential as chemopreventive and chemosensitizing agents, reducing inflammation and tumor growth.
+
+**12.6 Conclusion**  
+Nutraceuticals and functional foods offer health benefits and may help prevent aging-associated diseases. However, more research is needed to confirm their efficacy and safety. They should complement, not replace, a healthy diet and lifestyle.

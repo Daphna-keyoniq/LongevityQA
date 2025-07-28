@@ -1,0 +1,99 @@
+name;min_value;max_value;unit;frequency;geroprotective_mechanism;cycle;references;name_in_kg
+5-Hydroxytryptophan;100.0;300.0;mg;Once per day;Serotonin precursor, mood regulation;Continuous;1-dosages;5-hydroxytryptophan
+Gamma-Aminobutyric Acid;500.0;1000.0;mg;Once per day;Neurotransmitter, reduces stress and anxiety;Continuous;1-dosages;gamma-aminobutyric acid
+L-ergothioneine;5.0;10.0;mg;Once per day;Antioxidant, protects against oxidative stress;Continuous;1-dosages;l-ergothioneine
+Nicotinamide Mononucleotide;250.0;500.0;mg;Once per day;NAD+ precursor, enhance cellular energy metabolism;Continuous;1-dosages;nicotinamide mononucleotide
+Nicotinamide Riboside;300.0;500.0;mg;Once per day;NAD+ precursor, enhance cellular energy metabolism;Continuous;1-dosages;nicotinamide riboside
+N-acetylglucosamine;500.0;500.0;mg;Once per day;Anti-inflammatory, supports joint health;Continuous;1-dosages;n-acetylglucosamine
+Pyrroloquinoline Quinone;10.0;20.0;mg;Once per day;Mitochondrial biogenesis, antioxidant;Continuous;1-dosages;pyrroloquinoline quinone
+Coenzyme Q10;100.0;200.0;mg;Once per day;Antioxidant, supports mitochondrial function;Continuous;1-dosages;coenzyme q10
+Tauroursodeoxycholic Acid;250.0;500.0;mg;Once per day;Liver protection, supports cellular homeostasis;Cyclic (2-3 months on/off);1-dosages;tauroursodeoxycholic acid
+Alanin;2.0;5.0;g;Once per day;Amino acid, supports muscle metabolism;Continuous;1-dosages;alanin
+Alpha-ketoglutarate;1.0;3.0;g;Once per day;Krebs cycle intermediate, supports energy metabolism;Continuous;1-dosages;alpha-ketoglutarate
+Alpha lipoic acid;300.0;600.0;mg;Once per day;Antioxidant, supports mitochondrial function;Continuous;1-dosages;alpha lipoic acid
+Arginine;3.0;6.0;g;Once per day;Nitric oxide precursor, improves blood flow;Continuous;1-dosages;arginine
+Astaxanthin;4.0;12.0;mg;Once per day;Potent antioxidant, anti-inflammatory;Continuous;1-dosages;astaxanthin
+Berberine;500.0;500.0;mg;2-3x daily;AMPK activator, supports metabolic health;Cyclic (2-3 months on/off);1-dosages;berberine
+Beta-hydroxybutyrate;10.0;12.0;g;Once per day;Ketone body, supports energy metabolism;Continuous;1-dosages;beta-hydroxybutyrate
+Vitamin D supplements;2000.0;4000.0;IU;Once per day;Supports bone health, immune function;Continuous;1-dosages;vitamin d supplements
+Hydroxytyrosol;5.0;20.0;mg;Once per day;Antioxidant, anti-inflammatory;Continuous;1-dosages;hydroxytyrosol
+Ginestein;50.0;100.0;mg;Once per day;Phytoestrogen, supports cardiovascular health;Continuous;1-dosages;ginestein
+Glycine;3.0;5.0;g;Once per day;Amino acid, supports collagen synthesis;Continuous;1-dosages;glycine
+Glucosamine;1500.0;1500.0;mg;Once per day;Supports joint health;Continuous;1-dosages;glucosamine
+Isoquercetin;250.0;500.0;mg;Once per day;Antioxidant, anti-inflammatory;Continuous;1-dosages;isoquercetin
+Carnosine;500.0;1000.0;mg;Once per day;Antioxidant, anti-glycation;Continuous;1-dosages;carnosine
+Epigallocatechin gallate;200.0;500.0;mg;Once per day;Antioxidant, supports cardiovascular health;Continuous;1-dosages;epigallocatechin gallate
+Quercetin;500.0;1000.0;mg;Once per day;Antioxidant, anti-inflammatory;Cyclic (2-3 months on/off);1-dosages;quercetin
+Caffeic acid;200.0;400.0;mg;Once per day;Antioxidant, anti-inflammatory;Continuous;1-dosages;caffeic acid
+Curcumin;500.0;2000.0;mg;Once per day;Anti-inflammatory, antioxidant;Continuous;1-dosages;curcumin
+Lecithin;1.0;2.0;g;Once per day;Supports brain health, emulsifier;Continuous;1-dosages;lecithin
+Lysine;1.0;3.0;g;Once per day;Amino acid, supports collagen synthesis;Continuous;1-dosages;lysine
+Lycopene;10.0;20.0;mg;Once per day;Antioxidant, supports cardiovascular health;Continuous;1-dosages;lycopene
+Lithium;1.0;5.0;mg;Once per day;Neuroprotective at low doses;Continuous (low- dose);1-dosages;lithium
+Lutein;10.0;10.0;mg;Once per day;Supports eye health;Continuous;1-dosages;lutein
+Zeaxanthin;2.0;2.0;mg;Once per day;Supports eye health;Continuous;1-dosages;zeaxanthin
+Magnesium citrate;200.0;400.0;mg;Once per day;Supports muscle and nerve function;Continuous;1-dosages;magnesium citrate
+Menaquinone (K2);100.0;200.0;mcg;Once per day;Supports bone and cardiovascular health;Continuous;1-dosages;vitamin k2
+Myricetin;100.0;400.0;mg;Once per day;Antioxidant, anti-inflammatory;Cyclic (2-3 months on/off);1-dosages;myricetin
+Nicotinamide;500.0;1000.0;mg;Once per day;NAD+ precursor, supports cellular energymetabolism;Continuous;1-dosages;nicotinamide
+Pinitol;600.0;600.0;mg;Once per day;Insulin mimetic, supports metabolic health;Continuous;1-dosages;pinitol
+Polydatin;20.0;40.0;mg;Once per day;Antioxidant, supports cardiovascular health;Continuous;1-dosages;polydatin
+Proanthocyanidins;50.0;200.0;mg;Once per day;Antioxidant, supports cardiovascular health;Continuous;1-dosages;proanthocyanidins
+Proline;500.0;500.0;mg;Once per day;Amino acid, supports collagen synthesis;Continuous;1-dosages;proline
+Rutin;500.0;500.0;mg;Once per day;Antioxidant, supports vascular health;Continuous;1-dosages;rutin
+Selenium;100.0;200.0;mcg;Once per day;Antioxidant, supports immune function;Continuous;1-dosages;selenium
+Serine;500.0;500.0;mg;Once per day;Amino acid, supports cognitive function;Continuous;1-dosages;serine
+Silymarin;240.0;240.0;mg;Once per day;Liver protection, antioxidant;Continuous;1-dosages;silymarin
+Spermidine;1.0;2.0;mg;Once per day;Autophagy induction, cellular regeneration;Continuous;1-dosages;spermidine
+Taurine;500.0;2000.0;mg;Once per day;Antioxidant, supports cardiovascular health;Continuous;1-dosages;taurine
+Theanine;200.0;400.0;mg;Once per day;Neuroprotective, stress reduction;Continuous;1-dosages;theanine
+Trehalose;1.0;3.0;g;Once per day;Autophagy induction;Continuous;1-dosages;trehalose
+Uridine;250.0;500.0;mg;Once per day;Supports brain function;Continuous;1-dosages;uridine
+Urolithin A;250.0;500.0;mg;Once per day;Mitochondrial biogenesis;Continuous;1-dosages;urolithin a
+Ursolic acid;150.0;300.0;mg;Once per day;Antiinflammatory;Continuous;1-dosages;ursolic acid
+Fisetin;100.0;300.0;mg;Once per day;Senolytic activity;Cyclic (intermittent);1-dosages;fisetin
+Zinc citrate;15.0;30.0;mg;Once per day;Antioxidant, supports immune function;Continuous;1-dosages;zinc citrate
+Citrulline;3.0;6.0;g;Once per day;Nitric oxide precursor;Continuous;1-dosages;citrulline
+Thymosin Beta 4 (TB4);1500.0;3000.0;mcg;Once per day;Tissue repair, regeneration, anti-inflammatory effects, neuroprotection;3-5 days (acute), 20-30 days (maintenance);2-dosages;tβ4 peptide
+CJC-1295 with Ipamorelin;100.0;200.0;mcg;Once per day;Growth hormone stimulation, tissue repair, improved sleep, anti-aging;Monday to Friday, 2 days off weekly;2-dosages;
+Metenkephalin (Opioid Growth Factor - OGF);1.0;2.0;mg;Once per day;Anticancer properties, pain management, immune regulation;Continuous;2-dosages;
+ARA290;4.0;4.0;mg;Once per day;Neuropathic pain relief, reduces inflammation, erythropoiesis stimulation;28 days (SQ), Weekly (IV);2-dosages;
+Bremelanotide (PT-141);1.0;2.0;mg;Once per day;Treats sexual dysfunction (erectile dysfunction in men, hypoactive sexual desire in women);As needed;2-dosages;bremelanotidum
+oxytocin induction;100.0;200.0;IU;Once per day;Enhances bonding, reduces anxiety, improves social interaction and trust;Daily;1-dosages;oxytocin induction
+Melanotan;500.0;500.0;mcg;Once per day;Skin tanning, libido enhancement, erectile dysfunction treatment;2 weeks (Melanotan I), As needed (Melanotan II);2-dosages;melanotan
+Thymosin Alpha-1 (TA-1);2.0;2.0;mg;Once per day;Enhances immune function, T-cell activation, cancer immunotherapy;2-3 times weekly;2-dosages;thymosin alpha-1
+Copper Peptide (GHK-Cu);5.0;5.0;mg;Once per day;Wound healing, gene modulation, anti-aging, cancer gene suppression;2-3 times weekly;2-dosages;
+Elamipretide (SS-31);;;;Once per day;Enhances mitochondrial function, scavenges ROS, improves ATP production, heart and muscle recovery;Not specified;2-dosages;
+MOTS-c;5.0;5.0;mg;Once per day;Improves mitochondrial health, insulin resistance, energy levels, and promotes weight loss;Twice weekly (SQ), Weekly (IV);2-dosages;mots-c
+Epitalon;5.0;5.0;mg;Once per day;Telomere extension, anti-aging, longevity, cancer prevention;10 days, repeated every 6 months;2-dosages;
+Pinealon;2.0;2.0;mg;Once per day;Cognitive enhancement, serotonin stimulation, neuroprotection;20-30 days (pill), 20 days (SQ), every 6 months;2-dosages;
+BPC-157;200.0;200.0;mcg;Once per day;Tissue healing, anti-inflammatory, gastrointestinal protection;Daily;2-dosages;
+creatine supplements;3.0;5.0;g;Once per day;Enhances cellular energy metabolism and muscle maintenance;continuous;3-dosages;creatine supplements
+ashwagandha;300.0;600.0;mg;Once per day;Adaptogenic, reduces stress and may modulate aging pathways;continuous;3-dosages;ashwagandha
+e. longifolia;200.0;400.0;mg;Once per day;Adaptogen, may boost testosterone and reduce stress;continuous;3-dosages;e. longifolia
+vitamin d2 supplements;2000.0;5000.0;IU;Once per day;Supports similar functions as D3, used for deficiency;continuous;3-dosages;vitamin d2 supplements
+vitamin d3 supplements;2000.0;5000.0;IU;Once per day;Improves calcium absorption and modulates immunity;continuous;3-dosages;vitamin d3 supplements
+vitamin b12 supplements;500.0;2000.0;mcg;Once per day;Supports methylation and nerve function;continuous;3-dosages;vitamin b12 supplements
+iron supplements;18.0;27.0;mg;Once per day;Essential for oxygen transport (use with caution in aging);continuous;3-dosages;iron supplements
+calcium supplements;500.0;1000.0;mg;Once per day;Promotes bone strength and cellular signaling;continuous;3-dosages;calcium supplements
+magnesium supplements;200.0;400.0;mg;Once per day;Supports enzymatic reactions and reduces inflammation;continuous;3-dosages;magnesium supplements
+potassium supplements;99.0;200.0;mg;Once per day;Maintains electrolyte balance and cellular function;continuous;3-dosages;potassium supplements
+fish oil supplements;1000.0;3000.0;mg;Once per day;Anti-inflammatory, supports cardiovascular and brain health;continuous;3-dosages;fish oil supplements
+maca;1500.0;3000.0;mg;Once per day;Adaptogen, may help balance hormones and reduce stress;continuous;3-dosages;maca
+whey protein;20.0;30.0;g;Once per day;Provides essential amino acids for muscle maintenance and repair;continuous;3-dosages;whey protein
+vitamin c supplements;500.0;1000.0;mg;Once per day;Potent antioxidant, supports collagen synthesis and immune function;continuous;3-dosages;vitamin c supplements
+multivitamins;1.0;1.0;tablet;Once per day;Nutritional insurance covering multiple micronutrients;continuous;3-dosages;multivitamins
+e longfolia;200.0;400.0;mg;Once per day;(E. longifolia) Supports testosterone balance and stress resilience;continuous;3-dosages;
+folate supplements;400.0;800.0;mcg;Once per day;Supports methylation and DNA repair processes;continuous;3-dosages;folate supplements
+folate + vitamin b12 supplementation;40.0;40.0;0;Once per day;Combined support for methylation and nerve function;continuous;3-dosages;folate + vitamin b12 supplementation
+folate + iron supplementation;40.0;40.0;0;Once per day;Supports DNA synthesis and hemoglobin production;continuous;3-dosages;folate + iron supplementation
+folic acid supplements;400.0;800.0;mcg;Once per day;Enhances methylation and supports cardiovascular health;continuous;3-dosages;folic acid supplements
+folic acid + vitamin b12 supplementation;40.0;40.0;0;Once per day;Combined support for methylation and neural protection;continuous;3-dosages;folic acid + vitamin b12 supplementation
+folic acid + iron supplementation;40.0;40.0;0;Once per day;Promotes DNA synthesis and prevents anemia;continuous;3-dosages;folic acid + iron supplementation
+omega3 supplements;1000.0;3000.0;mg;Once per day;Anti-inflammatory, supports cardiovascular and cognitive function;continuous;3-dosages;omega3 supplements
+huang lian jie du decoction;150.0;300.0;mL;Once per day;Traditional anti-inflammatory formula, modulates metabolism;continuous;3-dosages;huang lian jie du decoction
+calcium + vitamin d supplements;50.0;50.0;0;Once per day;Combined support for bone and cardiovascular health;continuous;3-dosages;calcium + vitamin d supplements
+ln18178 (tesnor) supplementation;100.0;200.0;mg;Once per day;May enhance testosterone and vitality;continuous;3-dosages;
+zinc supplements;15.0;30.0;mg;Once per day;Supports immune health and antioxidant defense;continuous;3-dosages;zinc supplements
+ginkgo biloba extracts;120.0;240.0;mg;Once per day;Enhances cerebral blood flow and cognitive function;continuous;3-dosages;ginkgo biloba extracts
+l glutamine;5.0;10.0;g;Once per day;Supports gut integrity and immune function;continuous;3-dosages;

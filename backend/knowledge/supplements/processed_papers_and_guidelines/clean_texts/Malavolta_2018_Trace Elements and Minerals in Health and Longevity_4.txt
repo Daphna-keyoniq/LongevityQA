@@ -1,0 +1,11 @@
+**Miguel Arredondo, Mauricio González and Mauricio Latorre**  
+
+**Abstract** Copper is an essential micronutrient for life. It is required by a wide range of species, including humans. Copper intake is reduced in elderly people, which can lead to significant health issues. As a co-factor of several antioxidant enzymes, a reduction in copper concentration directly affects the protective activity of these proteins, decreasing the organism's capacity to counteract oxidative stress damage, affecting the inflammatory/immune response, and impacting the functioning of the central nervous system. Chronic copper toxicity is rare and primarily affects the liver. Wilson’s disease and Indian childhood cirrhosis are examples of severe chronic liver disease resulting from genetic predisposition to hepatic copper accumulation. Alzheimer’s and Parkinson’s diseases are examples of neurodegenerative disorders that may involve altered copper metabolism.
+
+**Benefits and Recommendations**: Copper supplementation may be beneficial in elderly individuals to support antioxidant enzyme function, immune response, and central nervous system health. 
+
+**Relevant Demographics**: This information is particularly relevant for elderly individuals who may experience reduced copper intake.
+
+**Potential Risks**: Chronic copper toxicity is rare but can affect the liver. Genetic predispositions, such as in Wilson’s disease, can lead to severe liver disease due to copper accumulation.
+
+**Recommended Dosages**: The paper does not specify recommended dosages for copper supplementation.

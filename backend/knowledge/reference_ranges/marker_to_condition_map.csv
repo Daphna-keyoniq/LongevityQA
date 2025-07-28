@@ -1,0 +1,23 @@
+biomarker,gender,range,unit,condition,synonyms,references,
+ldl cholesterol,,>4.91,mmol/L,severe hypercholesterolemia,"severe DLP, severe HLP, very high LDL, severe hypercholesterolaemia",LDL Cholesterol: What It Is & How to Manage It,https://www.ahajournals.org/doi/10.1161/ATVBAHA.123.319341
+ldl cholesterol,,4.1-4.9,mmol/L,hypercholesterolemia,"DLP, HLP, high LDL, hypercholesterolaemia",LDL Cholesterol: What It Is & How to Manage It,
+triglycerides,,>5.65,mmol/L,severe hypertriglyceridemia,"severe hyperTG, high triglyceride",p347.pdf,
+triglycerides,,1.69-5.64,mmol/L,hypertriglyceridemia,"hyperTG, very high triglyceride",p347.pdf,
+platelet count,,100000-149999,1/uL,mild thrombocytopenia,,"Thrombocytopenia: Symptoms, Stages & Treatment",
+platelet count,,51000-100000,1/uL,moderate thrombocytopenia,,"Thrombocytopenia: Symptoms, Stages & Treatment",
+platelet count,,<51000,1/uL,severe thrombocytopenia,,"Thrombocytopenia: Symptoms, Stages & Treatment",
+hemoglobin,male,<13.5,g/dL,anemia,,Anemia - Hematology.org,
+hemoglobin,female,<12,g/dL,anemia,,Anemia - Hematology.org,
+eGFR,,>90,ml/min/1.73m2,normal eGFR,,KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - Kidney International,
+eGFR,,60-89,ml/min/1.73m2,Chronic Kidney Disease stage 2,"CKD stage 2, mildly decreased eGFR",KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - Kidney International,fx2_lrg.jpg (2665×1998)
+eGFR,,30-59,ml/min/1.73m2,Chronic Kidney Disease stage 3,"CKD stage 3, moderately decreased eGFR",KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - Kidney International,fx2_lrg.jpg (2665×1998)
+eGFR,,15-29,ml/min/1.73m2,Chronic Kidney Disease stage 4,"CKD stage 4, severely decreased eGFR",KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - Kidney International,fx2_lrg.jpg (2665×1998)
+eGFR,,<15,ml/min/1.73m2,Chronic Kidney Disease stage 5,"CKD stage 5, renal failure, kidney failure",KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease - Kidney International,
+Systolic Blood Pressure,,>140,mmHg,Hypertension,"HT, HTN",ESC Guidelines for the management of elevated blood pressure and hypertension,2023 ESH Hypertension Guideline Update: Bringing Us Closer Together Across the Pond - American College of Cardiology
+Systolic Blood Pressure,,>180,mmHg,Severe Hypertension,"Severe HT, Severe HTN, Hypertension Grade 3",ESC Guidelines for the management of elevated blood pressure and hypertension,2023 ESH Hypertension Guideline Update: Bringing Us Closer Together Across the Pond - American College of Cardiology
+Diastolic Blood Pressure,,>90,mmHg,Hypertension,"HT, HTN",ESC Guidelines for the management of elevated blood pressure and hypertension,2023 ESH Hypertension Guideline Update: Bringing Us Closer Together Across the Pond - American College of Cardiology
+Diastolic Blood Pressure,,>110,mmHg,Severe Hypertension,"Severe HT, Severe HTN, Hypertension Grade 3",ESC Guidelines for the management of elevated blood pressure and hypertension,2023 ESH Hypertension Guideline Update: Bringing Us Closer Together Across the Pond - American College of Cardiology
+Fasting Blood Glucose,,>=126,mg/dL,diabetes mellitus,"DM, type 2 DM, DM type 2",Diabetes Diagnosis & Tests | ADA,
+Fasting Blood Glucose,,100-125,mg/dL,prediabetes,preDM,Diabetes Diagnosis & Tests | ADA,
+Hemoglobin A1c,,>=6.5,,diabetes mellitus,"DM, type 2 DM, DM type 2",Diabetes Diagnosis & Tests | ADA,
+Hemoglobin A1c,,5.7-6.4,,prediabetes,preDM,Diabetes Diagnosis & Tests | ADA,

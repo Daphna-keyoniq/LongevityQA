@@ -1,0 +1,87 @@
+**4 Hypervitaminosis**
+
+***4.1 Vitamin A and Carotenoids***
+
+Vitamin A is crucial for vision, immune function, and cellular growth. Recommended intake varies by age and gender, generally 600-900 μg/day for adults. Excess intake can lead to hypervitaminosis A, causing liver damage, bone abnormalities, and increased brain pressure. Symptoms include skin rash, nausea, and joint pain. Excessive intake during pregnancy can cause congenital anomalies. Long-term excess intake is linked to fractures and osteoporosis. Carotenoids, while not as toxic, can cause skin yellowing and may increase lung cancer risk in smokers.
+
+***4.2 Vitamin B1***
+
+Thiamin is essential for energy metabolism and neuronal function. RDA is 1.1–1.2 mg for adults. Excessive intake is rare and usually excreted through urine. High doses may cause allergic reactions, digestive disturbances, and in rare cases, ataxia and lethargy.
+
+***4.3 Vitamin B2***
+
+Riboflavin is important for energy production and antioxidant enzyme function. RDA is 1.3 mg for males and 1.1 mg for females. Excessive intake is generally safe but can cause urine discoloration and mild gastrointestinal disturbances.
+
+***4.4 Vitamin B3***
+
+Niacin is involved in energy metabolism and lipid regulation. RDA is 20 mg/day. Excessive intake can cause niacin flush, nausea, vomiting, and abdominal pain.
+
+***4.5 Vitamin B5***
+
+Pantothenic acid is crucial for CoA synthesis and metabolism. RDA is 5 mg for adults. High doses may cause gastrointestinal disturbances.
+
+***4.6 Vitamin B6***
+
+Pyridoxine is involved in neurotransmitter synthesis and immune function. RDA is 1.2–1.3 mg for adults. Excessive intake can lead to sensory neuropathy and neurological symptoms.
+
+***4.7 Vitamin B7***
+
+Biotin supports metabolism and gene expression. RDA is 30 μg for adults. Excessive intake can cause allergic reactions and interfere with lab tests.
+
+***4.8 Vitamin B9***
+
+Folic acid is vital for DNA synthesis and cell division. RDA is 400 μg for adults. Excessive intake may increase cancer risk and mask vitamin B12 deficiency.
+
+***4.9 Vitamin B12***
+
+Cyanocobalamin is crucial for red blood cell formation and nervous system function. No known toxicity, but high doses can affect lab test results.
+
+***4.10 Vitamin C***
+
+Vitamin C is an antioxidant involved in collagen synthesis and immune function. RDA is 75–90 mg/day. High doses can cause gastrointestinal disturbances and increase kidney stone risk.
+
+***4.11 Vitamin D***
+
+Vitamin D supports calcium and phosphate absorption. RDA is 600–800 IU/day. Excessive intake can lead to hypercalcemia, causing nausea, vomiting, and soft tissue calcification.
+
+***4.12 Vitamin E***
+
+Vitamin E is an antioxidant that supports immune function. Excessive intake can increase bleeding risk and cause gastrointestinal symptoms.
+
+***4.13 Vitamin K***
+
+Vitamin K is involved in blood clotting and bone health. RDA is 90–120 μg/day. Excessive intake can interfere with anticoagulants and cause allergic reactions.
+
+**5 Excess Mineral Uptake**
+
+***5.1 Calcium***
+
+Calcium is essential for bone health and muscle function. Excessive intake can lead to hypercalcemia, causing kidney stones and interfering with mineral absorption.
+
+***5.2 Iron***
+
+Iron is crucial for oxygen transport and energy production. Excessive intake can cause oxidative stress and organ damage, particularly in the liver and heart.
+
+***5.3 Copper***
+
+Copper is vital for enzyme function and iron metabolism. Excessive intake can lead to copper toxicity, causing liver damage and neurological problems.
+
+***5.4 Zinc***
+
+Zinc supports immune function and wound healing. Excessive intake can cause gastrointestinal symptoms and impair immune function.
+
+***5.5 Magnesium***
+
+Magnesium is involved in muscle and nerve function. Excessive intake can cause gastrointestinal symptoms and, in severe cases, cardiac arrhythmias.
+
+***5.6 Manganese***
+
+Manganese is involved in metabolism and bone formation. Excessive intake can lead to neurological symptoms similar to Parkinson’s disease.
+
+***5.7 Molybdenum***
+
+Molybdenum is a cofactor for enzymes involved in amino acid metabolism. Excessive intake can interfere with copper metabolism and cause joint pain and anemia.
+
+***5.8 Selenium***
+
+Selenium is crucial for antioxidant enzyme function and thyroid hormone metabolism. Excessive intake can lead to selenosis, causing gastrointestinal disturbances and neurological symptoms.

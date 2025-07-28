@@ -1,0 +1,8 @@
+question_answering_task:
+  description: >
+    Answer the user's question on longevity based on the provided context.
+  expected_output: >
+    Question: {question}
+    You are given a question about something related to longevity.
+    Please try to answer the question in a concise, helpful and accurate manner.
+  agent: question_answering_agent

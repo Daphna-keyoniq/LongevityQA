@@ -1,0 +1,74 @@
+[project]
+name = "longevity_qa"
+version = "0.1.0"
+description = "Longevity Question and Answering Model"
+authors = [{ name = "Daphna Keidar", email = "daphkeidar@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai",
+    "crewai[tools]",
+    "pymupdf>=1.23.0",
+    "python-multipart>=0.0.20",
+    "pint>=0.23",
+    "psycopg2-binary==2.9.10",
+    "azure-storage-blob>=12.25.1",
+    "pydantic[email]>=2.10.6",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "gunicorn>=21.2.0",
+]
+
+[tool.uv.sources]
+crewai = { git = "https://github.com/crewAIInc/crewAI.git", rev = "a3b5413" }
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.2.0",
+    "streamlit>=1.32.0",
+    "mypy>=1.15.0",
+    "ipykernel>=6.29.5",
+    "pymupdf4llm==0.0.21"
+]
+
+[project.scripts]
+kickoff = "medai_flow.main:kickoff"
+plot = "medai_flow.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E", "F", "I", "N", "W", "B", "UP", "PL", "RUF"]
+ignore = ["E402","F405","F403","E501","I001", "UP007", "UP035", "UP006", "B017", "PLR2004", "PLR0912", "PLR0915"]
+
+[tool.ruff.isort]
+known-first-party = ["medai_flow"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "backend"
+]
+
+[tool.ruff.lint.pylint]
+max-args = 10
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+no_implicit_optional = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+warn_return_any = false
+warn_unused_ignores = false
+warn_unreachable = true
+show_error_codes = true
+follow_imports = "normal"
+disable_error_code = ["attr-defined", "index"]

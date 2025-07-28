@@ -1,0 +1,88 @@
+**22.4 Senolytics**
+
+Senolytics are a class of drugs that selectively kill senescent cells, which accumulate with age and contribute to various age-related diseases. Nutritional senolytics are compounds from natural sources that exhibit senolytic activity. Below are some prominent nutritional senolytic compounds:
+
+**22.4.1.1 Allicin**  
+- **Benefits**: Found in garlic, allicin has health-promoting effects on diseases like cancer, cardiovascular and metabolic disorders, and diabetes due to its antioxidant and anti-inflammatory properties.
+- **Risks**: Specific risks are not detailed, but general caution is advised with high doses.
+
+**22.4.1.2 Curcumin and Curcumin Analogues**  
+- **Benefits**: Curcumin, from turmeric, has senolytic activity and may delay aging and treat age-related diseases.
+- **Risks**: High doses may have toxic effects.
+
+**22.4.1.3 Fisetin**  
+- **Benefits**: Found in strawberries and apples, fisetin has anti-inflammatory and senolytic roles, extending lifespan in mice.
+- **Risks**: High doses can induce mitochondrial pro-oxidant activity.
+
+**22.4.1.4 Luteolin**  
+- **Benefits**: Found in vegetables and fruits, luteolin has anti-inflammatory actions and weak senolytic activity.
+- **Risks**: Specific risks are not detailed.
+
+**22.4.1.5 Ortho-Vanillin**  
+- **Benefits**: Present in plant extracts, it has senolytic effects on intervertebral disc cells and potential anticancer properties.
+- **Risks**: Specific risks are not detailed.
+
+**22.4.1.6 Piperlongumine**  
+- **Benefits**: Found in long pepper, it has senolytic activity and targets oxidative stress resistance proteins.
+- **Risks**: Specific risks are not detailed.
+
+**22.4.1.7 Quercetin**  
+- **Benefits**: Found in apples and onions, quercetin has senolytic activity, especially when combined with Dasatinib.
+- **Risks**: Specific risks are not detailed.
+
+**22.4.1.8 Sulforaphane**  
+- **Benefits**: Found in cruciferous vegetables, it induces cell cycle arrest and senescence in cancer cells.
+- **Risks**: Specific risks are not detailed.
+
+**22.5 Gerosuppressors and Senomorphics**
+
+Gerosuppressors, also known as senomorphics, suppress or reverse the senescent state. Below are some prominent nutritional gerosuppressors:
+
+**22.5.1 Apigenin**  
+- **Benefits**: Found in herbs and vegetables, it inhibits inflammation and the SASP, potentially reducing age-related diseases.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.2 Avenanthramide**  
+- **Benefits**: Found in oats, it inhibits the SASP and reduces markers of senescence.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.3 Epigallocatechin-3-Gallate (EGCG)**  
+- **Benefits**: Found in green tea, it has anti-cancer and anti-inflammatory properties, and may delay senescence.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.4 Ginsenoside F1**  
+- **Benefits**: Found in ginseng, it suppresses the SASP in astrocytes.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.5 Metformin**  
+- **Benefits**: Used for diabetes management, it has potential anti-aging effects by modulating various cellular processes.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.6 Puerarin**  
+- **Benefits**: Found in kudzu, it has various pharmacological actions and may prevent aging phenotypes.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.7 Rapamycin and Rapalogues**  
+- **Benefits**: Originally an antifungal, rapamycin inhibits mTOR and extends lifespan in several organisms.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.8 Resveratrol and Resveralogues**  
+- **Benefits**: Found in grapes and berries, resveratrol has anti-inflammatory properties and may suppress the SASP.
+- **Risks**: Specific risks are not detailed.
+
+**22.5.9 Secoiridoids**  
+- **Benefits**: Found in olives, they have various pharmacological properties, including neuroprotective and anti-cancer effects.
+- **Risks**: Specific risks are not detailed.
+
+**22.6 Other Nutritional and Dietary Interventions**
+
+**22.6.1 Geroprotectors**  
+- **Benefits**: Compounds like alpha-ketoglutarate and nicotinamide mononucleotide (NMN) have potential anti-aging effects.
+- **Risks**: Specific risks are not detailed.
+
+**22.6.2 Epigenetic Modifiers**  
+- **Benefits**: Nutrients that modify epigenetics may contribute to rejuvenation and anti-aging strategies.
+- **Risks**: Specific risks are not detailed.
+
+**Concluding Remarks**  
+The field of nutritional geroscience is young, and more research is needed to understand the effects of these compounds on aging and health. Safety and efficacy should be considered, especially regarding dosage and individual health conditions.

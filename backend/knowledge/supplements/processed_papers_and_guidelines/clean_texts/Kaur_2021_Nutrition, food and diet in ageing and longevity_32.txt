@@ -1,0 +1,59 @@
+**Osteoarthritis**  
+- **Supplements and Benefits**: Catechins (green tea) reduce inflammation and improve collagen protection. Omega-3 fatty acids (fish oil) decrease pain and improve function. Resveratrol acts as an anti-inflammatory and antioxidative agent. Ginger, Garcinia mangostana, and Vitamin K also show benefits.
+- **Demographics**: Overweight patients, older adults.
+- **Risks**: Not specified.
+- **Dosages**: Fish oil (2000 mg/day DHA + 400 mg/day EPA).
+
+**Cardiovascular Disease**  
+- **Supplements and Benefits**: Vitamin E reduces oxidative stress. Omega-3 fatty acids reduce inflammatory mediators and atherosclerosis.
+- **Demographics**: Older adults, men over 50, women over 55.
+- **Risks**: Not definitive for vitamin E supplementation.
+- **Dosages**: Marine omega-3 fatty acids (1 g/d), Vitamin D3 (2000 IU/d).
+
+**Cancer**  
+- **Supplements and Benefits**: Coriolus versicolor enhances immunomodulation. Resveratrol and curcumin enhance autophagy and apoptosis. L-carnosine acts as an antioxidant and apoptosis modulator. Chrysin shows antiproliferative activities.
+- **Demographics**: General cancer patients.
+- **Risks**: Not specified.
+- **Dosages**: Not specified.
+
+**Age-Related Macular Degeneration**  
+- **Supplements and Benefits**: Vitamins C and E, beta-carotene, zinc, lutein, zeaxanthin, DHA, resveratrol, and NAD improve retinal health.
+- **Demographics**: Older adults.
+- **Risks**: Hormetic effects at high doses.
+- **Dosages**: Not specified.
+
+**Menopausal Symptoms**  
+- **Supplements and Benefits**: Black cohosh, flaxseed, soya genistein, and Vitamin D alleviate symptoms.
+- **Demographics**: Menopausal women.
+- **Risks**: Hormetic effects at high doses.
+- **Dosages**: Not specified.
+
+**Osteoporosis**  
+- **Supplements and Benefits**: Calcium, phosphorus, magnesium, Vitamin D, Vitamin B12, and Vitamin K improve bone health.
+- **Demographics**: Postmenopausal women, older adults.
+- **Risks**: Not specified.
+- **Dosages**: Vitamin K (100 ug/day for healthy people).
+
+**Alzheimer’s Disease**  
+- **Supplements and Benefits**: Resveratrol, curcumin, astaxanthin, spermidine, and carnosine enhance mitophagy and reduce neurodegeneration.
+- **Demographics**: Older adults, patients with neurodegenerative conditions.
+- **Risks**: Not specified.
+- **Dosages**: Not specified.
+
+**Parkinson’s Disease**  
+- **Supplements and Benefits**: Vitamin D, B complex, omega fatty acids, probiotics, coenzyme Q10, spermidine, and hydrogen sulfide improve symptoms.
+- **Demographics**: Older adults, patients with Parkinson’s.
+- **Risks**: Hormetic effects at high doses.
+- **Dosages**: Not specified.
+
+**Sarcopenia**  
+- **Supplements and Benefits**: Essential amino acids, glucose, albumin, Vitamin D, Vitamin C, HMB, and royal jelly improve muscle mass and strength.
+- **Demographics**: Older adults with sarcopenia.
+- **Risks**: Not specified.
+- **Dosages**: Vitamin D (1000 IU), Vitamin C (500 mg), HMB (3 g).
+
+**Benign Prostatic Hyperplasia**  
+- **Supplements and Benefits**: Resveratrol, zinc, cranberry extracts, and ginger reduce symptoms.
+- **Demographics**: Men over 50.
+- **Risks**: Not specified.
+- **Dosages**: Not specified.

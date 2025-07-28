@@ -1,0 +1,34 @@
+**Nutraceuticals in the Prevention of Cancer: Summary on Supplements**
+
+**Benefits and Recommendations:**
+1. **Vitamin A**: Found in yellow/orange fruits, green leafy vegetables, fish oils, eggs, and dairy. Recommended intake is 900 mcg for men and 700 mcg for women. It aids in apoptosis, cell growth, and differentiation, potentially reducing risks of colorectal cancer (CRC), glioma, lung cancer (LC), and other cancers.
+
+2. **Vitamin B1 (Thiamine)**: Present in milk, fish, legumes, eggs, bread, and meat. Recommended intake is 1.2 mg for men and women. It supports embryonic development and may reduce cancer risk at low doses but increase it at high doses, particularly in breast cancer (BC) and LC.
+
+3. **Vitamin B9 (Folate)**: Found in green leafy vegetables, citrus fruits, and whole grains. Recommended intake is 400 mcg. It is crucial for DNA synthesis and methylation, potentially reducing risks of BC, CRC, pancreatic cancer (PANC), and gastric cancer.
+
+4. **Vitamin B12**: Sources include milk, fish, shellfish, eggs, and meat. Recommended intake is 2 to 5 mcg. It supports DNA synthesis and cell division, with potential implications for glioma, BC, and gastric cancer.
+
+5. **Vitamin C**: Found in tomatoes, broccoli, citrus fruits, and strawberries. Recommended intake is 75 mg for women and 90 mg for men. It may increase apoptosis and autophagy, potentially reducing risks of hematological malignancies and solid tumors.
+
+6. **Vitamin D**: Sources include eggs, meat, fish, and dairy. Recommended intake is 15 mcg. It may reduce risks of PANC, BC, CRC, and prostate cancer (PROC).
+
+7. **Vitamin E**: Found in vegetables, cereal, meat, and eggs. Recommended intake is 15 mg for adults. It targets oxidative stress and inflammatory markers, potentially reducing risks of CRC, PROC, and BC.
+
+8. **Selenium**: Found in meat products, cereals, and seafood. Recommended intake is 55 mcg. It may reduce cancer risk and restore genomic stability, with implications for skin, ovarian cancer (OVC), BC, CRC, PROC, LC, and others.
+
+9. **Zinc**: Sources include poultry, meat, and seafood. Recommended intake is 15 mg. It supports apoptosis and DNA repair, potentially impacting PANC, head and neck squamous cell carcinoma, and cervical cancer.
+
+10. **Magnesium**: Found in legumes, leafy vegetables, nuts, and grains. Recommended intake is 300 to 400 mg. It supports DNA replication and repair, potentially reducing risks of PANC, CRC, and LC.
+
+**Client Demographics:**
+- The information is relevant for adults, with specific recommendations for men and women.
+- Certain supplements may be particularly beneficial for individuals with specific cancer risks or those undergoing cancer treatment.
+
+**Potential Risks:**
+- Excessive intake of certain vitamins, such as Vitamin B1, may increase cancer risk.
+- High plasma levels of Vitamin B12 have been linked to an increased risk of certain cancers.
+- It is crucial to maintain recommended dosages to avoid potential adverse effects.
+
+**Conclusion:**
+A balanced intake of these supplements, tailored to individual needs and health conditions, may contribute to cancer prevention and support overall health. It is essential to consult healthcare professionals for personalized recommendations.

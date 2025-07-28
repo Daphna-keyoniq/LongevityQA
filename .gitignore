@@ -1,0 +1,47 @@
+.env
+.env*
+__pycache__/
+lib/
+!app/src/lib/* # Keep the frontend lib folder
+.DS_Store
+input_data/personal/*
+
+# Logs
+logs/
+*.log
+
+output_data/
+demos/
+
+*.bin
+*.sqlite3
+
+*.db
+.qodo
+
+*.pyc
+__pycache__
+.pytest_cache
+.idea/
+.ruff_cache
+.mypy_cache
+
+input_data/temp_*
+
+*.TODO
+.env.*
+
+# Azure Developer CLI
+.azure/
+.azd/
+
+# Node.js
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+.tmp/
+temp/
