@@ -16,7 +16,7 @@ const TextBox: React.FC<TextBoxProps> = ({ value, onChange, placeholder, label }
             display: "block",
             marginBottom: "5px",
             fontWeight: "bold",
-            color: "#007BFF", // Add a unique color for the label
+            color: "#54769D", 
           }}
         >
           {label}
@@ -30,7 +30,7 @@ const TextBox: React.FC<TextBoxProps> = ({ value, onChange, placeholder, label }
         style={{
           width: "300px",
           padding: "10px",
-          border: "2px solid #007BFF", // Add a unique border color
+          border: "2px solid #54769D", // Add a unique border color
           borderRadius: "4px",
           backgroundColor: "#f9f9f9", // Add a light background color
         }}

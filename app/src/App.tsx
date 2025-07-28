@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import type { FormEvent } from "react";
 import ReactDOM from "react-dom/client";
 import TextBox from "./components/TextBox.tsx"; // Import the TextBox component
+import Button from "./components/Button.tsx"; // Import the Button component
 
 const App: React.FC = () => {
   console.log("App.tsx is being rendered!");
@@ -19,11 +20,9 @@ const App: React.FC = () => {
       return;
     }
 
-    // Here you can add logic to send the question to the backend
     try {
-      const response = await fetch("http://localhost:8011/ask", {
+      const response = await fetch("http://172.161.85.236:8011/ask", {
         method: "POST",
-        // mode: 'no-cors', // Removed to allow proper response handling
         headers: {
           "Content-Type": "application/json",
         },
@@ -48,9 +47,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Longevity QA App</h1>
-      <p>Type your question below:</p>
+    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif", color:"#54769D"}}>
+      <h1>Longevity QA</h1>
+      <p>Welcome to the Longevity Question & Answering App! 
+      <br />
+        Please type your question below:</p>
       <form onSubmit={handleSubmit}>
         <TextBox
           value={question}
@@ -58,19 +59,7 @@ const App: React.FC = () => {
           placeholder="Ask a question..."
           label="Your Question:"
         />
-        <button
-          type="submit"
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#007BFF",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer",
-          }}
-        >
-          Submit
-        </button>
+        <Button> Submit</Button>
       </form>
       {answer && (
         <div style={{ marginTop: "20px" }}>
