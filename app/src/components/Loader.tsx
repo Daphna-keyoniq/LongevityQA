@@ -2,9 +2,20 @@ import React from 'react'
 import {ClipLoader} from "react-spinners";
 import 'ldrs/helix'
 
+
 // Manually defined
 import { helix } from 'ldrs'
 helix.register("l-helix")
+
+// Extend JSX to recognize the custom element
+declare global {
+    namespace JSX {
+      interface IntrinsicElements {
+        'l-helix': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { color?: string };
+      }
+    }
+  }
+  
 
 interface LoaderProps {
     loading: boolean;
