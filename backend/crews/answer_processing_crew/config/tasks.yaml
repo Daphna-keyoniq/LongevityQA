@@ -14,23 +14,21 @@ question_filtering_task:
     Question: {question}
     You are given a user input to the longevity question answering system.
     Please determine if the user's input message/question is relevant to longevity medicine. 
-    Longevity medicine is a field of medicine that focuses on extending human lifespan and improving healthspan, covering topics accros aging, wellness, lifestyle, disease prevention, and personalised healthcare.
-    Longevity interventions and treatments include: medications, repurposed drugs, supplements, lifestyle changes, exercise, nutrition, stress reduction, sleep optimisation, skincare, disease prevention, proactive healthcare, and more. 
+    Longevity medicine is a field of medicine that focuses on extending human lifespan and improving healthspan, through medication, supplements, lifestyle changes, exercise, nutrition, stress reduction, sleep, skincare, and more. 
+    It includes topics such as aging, wellness, disease prevention, health optimization, and the latest scientific findings in these areas.
     If the question is related to longevity, return "True". If it is completely unrelated, return "False".
   agent: question_filtering_agent
-question_labelling_task:
+question_categorising_task:
   description: >
     Answer the user's question on longevity based on the provided context.
   expected_output: >
     Question: {question}
     You are given a user input to the longevity question answering system.
-    If the question is not related to longevity medicine, provide no additional labels and skip the categorization.
-    If the question is related to longevity medicine, label it according to the following categories:
-    - Supplements: Questions about supplements and/or vitamins 
-    - Disease: Questions about a specific disease or condition
-    - Nutrition: Questions about food, nutrition, and diet
-    - Exercise: Questions about exercise, fitness, and physical activity
-    - Sleep: Questions related to sleep
-    Please provide a list of the labels most relevant to the question, separated by commas. If the question does not fit any of these categories, return an empty list.
-  agent: question_labelling_agent
+    Please classify the question into one of the following categories:
+    - Greeting/intro message: such as "Hello", "Hi", "Good morning", etc.
+    - Question about longevity: such as "What is longevity?", "How can I live longer?", etc.
+    - Question about the system: such as "What is this system?", "How does it work?", etc.
+    - Question not related to longevity
+    - Other: any other type of user input that does not fit into the above categories, and in particular, any input that is not a question.
+  agent: question_filtering_agent
 

@@ -58,22 +58,11 @@ class SimpleQACrew:
             max_retries=0,
         )
 
-
-    @task
-    def question_labelling_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["question_filtering_task"],  # type: ignore
-            output_pydantic=Question,
-            context=[self.question_filtering_task()],  # type: ignore
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-
     @task
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task()],  # type: ignore
+            context=[self.question_filtering_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,

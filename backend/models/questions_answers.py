@@ -12,7 +12,7 @@ class QueryType(BaseModel):
 class Question(BaseModel):
     question: str
     is_longevity_related: bool = True
+    labels: list[str] = []
 
 class Answer(BaseModel):
     answer: str
-
