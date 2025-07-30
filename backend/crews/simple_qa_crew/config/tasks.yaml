@@ -5,7 +5,7 @@ question_answering_task:
     Question: {question}
     You are given a question about something related to longevity.
     Please try to answer the question in a concise, helpful and accurate manner.
-    If the question is not related to longevity, you can respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to that topic, feel free to ask!"
+    If the question is not related to longevity, you can respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to longevity, feel free to ask!"
   agent: question_answering_agent
 question_filtering_task:
   description: >
