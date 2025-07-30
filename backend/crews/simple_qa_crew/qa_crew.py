@@ -5,10 +5,10 @@ from crewai.project import CrewBase, agent, crew, task
 # crews
 from crews.simple_qa_crew.guardrail import validate_and_trasform
 # models
-from models.outputs import Answer
+from backend.models.questions_answers import Answer, Question
 
 # tools
-from llm.llm import get_deterministic_llm
+from llm.llm import get_deterministic_llm, get_gemini_llm, get_perplexity_llm
 from utils.logging import log_execution_time, get_logger
 
 
@@ -22,6 +22,8 @@ class SimpleQACrew:
     tasks_config = "config/tasks.yaml"
 
     llm = get_deterministic_llm()
+    llm_gemini = get_gemini_llm()
+    llm_perplexity = get_perplexity_llm()
 
     name = "Simple QA Crew"
 
@@ -30,17 +32,37 @@ class SimpleQACrew:
         self.logger.info("SimpleQACrew initialized")
 
     @agent
+    def question_filtering_agent(self) -> Agent:
+        return Agent(
+            config=self.agents_config["question_filtering_agent"],  # type: ignore
+            llm=self.llm,
+            verbose=True,
+            max_retry_limit=5,
+        )
+
+    @agent
     def question_answering_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["question_answering_agent"],  # type: ignore
-            llm=self.llm,
+            llm=self.llm_gemini,
             verbose=True,
+            max_retry_limit=5,
         )
 
     @task
-    def data_extraction_task(self) -> Task:
+    def question_filtering_task(self) -> Task:
+        return Task(
+            config=self.tasks_config["question_filtering_task"],  # type: ignore
+            output_pydantic=Question,
+            guardrail=validate_and_trasform,
+            max_retries=0,
+        )
+
+    @task
+    def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
+            context=[self.question_filtering_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,
