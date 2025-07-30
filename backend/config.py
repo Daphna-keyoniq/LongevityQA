@@ -60,7 +60,7 @@ class Paths(BaseModel):
     logs_dir: Path = Field(default_factory=lambda: Path("logs"))
     temp_dir: Path = Field(default_factory=lambda: Path("input_data/temp"))
     knowledge_dir: Path = Field(
-        default_factory=lambda: Path("src/medai_flow/knowledge")
+        default_factory=lambda: Path("backend/knowledge")
     )
 
     def __init__(self, **data):
@@ -196,7 +196,7 @@ class StorageConfig(BaseModel):
     connection_string: str
     account_name: str
     account_key: str
-    container_name: str = Field(default="medai-files")
+    container_name: str = Field(default="lqa-files")
 
     @field_validator("connection_string", "account_name", "account_key")
     @classmethod
@@ -242,7 +242,7 @@ class Config:
 
         # Configure postgres database
         db_config = {
-            "dbname": os.getenv("POSTGRES_DB", "medai_flow"),
+            "dbname": os.getenv("POSTGRES_DB", "longevity_qa"),
             "user": os.getenv("POSTGRES_USER", "postgres"),
             "password": os.getenv("POSTGRES_PASSWORD", ""),
             "host": os.getenv("POSTGRES_HOST", "localhost"),
@@ -270,7 +270,7 @@ class Config:
             connection_string=os.getenv("AZURE_STORAGE_CONNECTION_STRING", ""),
             account_name=os.getenv("AZURE_STORAGE_ACCOUNT_NAME", ""),
             account_key=os.getenv("AZURE_STORAGE_ACCOUNT_KEY", ""),
-            container_name=os.getenv("AZURE_STORAGE_CONTAINER_NAME", "medai-files"),
+            container_name=os.getenv("AZURE_STORAGE_CONTAINER_NAME", "lqa-files"),
         )
 
         return cls

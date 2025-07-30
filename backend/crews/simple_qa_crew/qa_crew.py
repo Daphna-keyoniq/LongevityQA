@@ -1,5 +1,8 @@
+from pathlib import Path
+# CreqAI imports
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 
 ## Internal imports
 # crews
@@ -10,7 +13,8 @@ from backend.models.questions_answers import Answer, Question
 # tools
 from llm.llm import get_deterministic_llm, get_gemini_llm, get_perplexity_llm
 from utils.logging import log_execution_time, get_logger
-
+from config import Config
+config = Config().load_configuration()
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -24,6 +28,19 @@ class SimpleQACrew:
     llm = get_deterministic_llm()
     llm_gemini = get_gemini_llm()
     llm_perplexity = get_perplexity_llm()
+
+    # supplement_knowledge_folder = Path(
+    #     config.paths.full_knowledge_dir
+    #     / "supplements/processed_papers_and_guidelines/clean_texts"
+    # )
+
+    # supplement_file_paths = list(Path(supplement_knowledge_folder).glob("*.txt"))  # noqa
+
+    # supplement_text_source = TextFileKnowledgeSource(
+    #     file_paths=supplement_file_paths,
+    #     chunk_size=10000,
+    #     chunk_overlap=1000,
+    # )
 
     name = "Simple QA Crew"
 
@@ -47,6 +64,7 @@ class SimpleQACrew:
             llm=self.llm,
             verbose=True,
             max_retry_limit=5,
+            # knowledge_sources=[self.supplement_text_source]
         )
 
     @task
