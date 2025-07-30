@@ -13,6 +13,7 @@ class Question(BaseModel):
     question: str
     is_longevity_related: bool = True
     labels: list[str] = []
+    knowledge_summary: str = ""
 
 class Answer(BaseModel):
     answer: str

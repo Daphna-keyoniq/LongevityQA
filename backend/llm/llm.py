@@ -27,10 +27,10 @@ def get_gemini_llm() -> LLM:
         top_p=0,
     )
 
-def get_perplexity_llm() -> LLM:
+def get_mistral_llm() -> LLM:
     """Returns a deterministic LLM model."""
     return LLM(
-        model="perplexity/perplexity-llama-3.1-70b",
+        model="mistral/mistral-large-latest", #"perplexity/perplexity-llama-3.1-70b",
         temperature=0,
         seed=0,
         n=1,

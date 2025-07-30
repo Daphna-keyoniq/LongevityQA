@@ -9,8 +9,8 @@ from pydantic import BaseModel
 
 ##Internal imports
 from crews.simple_qa_crew.qa_crew import SimpleQACrew
-from crews.question_parsing_crew.question_crew import QuestionParsingCrew
-from backend.models.questions_answers import Answer, Question
+#from crews.question_parsing_crew.question_crew import QuestionParsingCrew
+from backend.models.questions_answers import Answer
 from utils.logging import get_logger
 
 class QAState(BaseModel):

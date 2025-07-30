@@ -12,7 +12,7 @@ from crews.simple_qa_crew.guardrail import validate_and_trasform
 from backend.models.questions_answers import Answer, Question
 
 # tools
-from llm.llm import get_deterministic_llm, get_gemini_llm, get_perplexity_llm
+from llm.llm import get_deterministic_llm, get_gemini_llm, get_mistral_llm
 from utils.logging import log_execution_time, get_logger
 from config import Config
 config = Config().load_configuration()
@@ -44,7 +44,7 @@ class SimpleQACrew:
 
     llm = get_deterministic_llm()
     llm_gemini = get_gemini_llm()
-    llm_perplexity = get_perplexity_llm()
+    llm_mistral = get_mistral_llm()
 
     supplement_knowledge_folder = Path(
         config.paths.full_knowledge_dir
@@ -95,7 +95,7 @@ class SimpleQACrew:
     def question_answering_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["question_answering_agent"],  # type: ignore
-            llm=self.llm,
+            llm=self.llm_mistral,
             verbose=True,
             max_retry_limit=5,
         )
@@ -126,7 +126,8 @@ class SimpleQACrew:
         conditional_task = ConditionalTask(
             config=self.tasks_config["supplement_knowledge_task"],  # type: ignore
             knowledge_sources=[self.supplement_text_source],
-            output_pydantic=Answer,
+            context=[self.question_labelling_task()],
+            output_pydantic=Question,
             guardrail=validate_and_trasform,
             condition=is_supplement_question,
             max_retries=0,
@@ -140,9 +141,10 @@ class SimpleQACrew:
         conditional_task = ConditionalTask(
             config=self.tasks_config["disease_knowledge_task"],  # type: ignore
             knowledge_sources=[self.supplement_text_source],
-            output_pydantic=Answer,
+            context=[self.question_labelling_task()],  # type: ignore
+            output_pydantic=Question,
             guardrail=validate_and_trasform,
-            condition=is_supplement_question,
+            condition=is_disease_question,
             max_retries=0,
         )
         self.logger.info("Conditional supplement knowledge task created")
@@ -152,7 +154,7 @@ class SimpleQACrew:
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task(), self.supplement_knowledge_task()],  # type: ignore
+            context=[self.question_labelling_task(), self.supplement_knowledge_task(), self.disease_knowledge_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,
