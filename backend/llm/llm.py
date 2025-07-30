@@ -38,3 +38,15 @@ def get_perplexity_llm() -> LLM:
         max_tokens=16384,
         top_p=0,
     )
+
+def get_mistral_llm() -> LLM:
+    """Returns a deterministic LLM model."""
+    return LLM(
+        model="mistral/mistral-large-latest",
+        temperature=0,
+        seed=0,
+        n=1,
+        max_completion_tokens=16384,
+        max_tokens=16384,
+        top_p=0,
+    )

@@ -8,7 +8,7 @@ from crews.simple_qa_crew.guardrail import validate_and_trasform
 from backend.models.questions_answers import Answer, Question
 
 # tools
-from llm.llm import get_deterministic_llm, get_gemini_llm, get_perplexity_llm
+from llm.llm import get_deterministic_llm, get_gemini_llm, get_mistral_llm
 from utils.logging import log_execution_time, get_logger
 
 
@@ -23,7 +23,7 @@ class SimpleQACrew:
 
     llm = get_deterministic_llm()
     llm_gemini = get_gemini_llm()
-    llm_perplexity = get_perplexity_llm()
+    llm_mistral = get_mistral_llm()
 
     name = "Simple QA Crew"
 
@@ -45,6 +45,7 @@ class SimpleQACrew:
         return Agent(
             config=self.agents_config["question_answering_agent"],  # type: ignore
             llm=self.llm_gemini,
+            fallback_llm=self.llm_mistral,
             verbose=True,
             max_retry_limit=5,
         )
