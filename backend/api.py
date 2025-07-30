@@ -14,7 +14,6 @@ from config import Config
 # from database.postgres_database import PostgresDatabase
 config = Config().load_configuration(type="prod")
 
-
 def setup():
     # Initialize dependencies
     # database = PostgresDatabase(**config.database.db_config)

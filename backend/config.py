@@ -53,7 +53,7 @@ class Paths(BaseModel):
         temp_dir: Directory for temporary files
     """
 
-    base_dir: Path = Field(default_factory=lambda: Path(__file__).parent.parent.parent)
+    base_dir: Path = Field(default_factory=lambda: Path(__file__).parent.parent)
     # relative path
     input_dir: Path = Field(default_factory=lambda: Path("input_data"))
     output_dir: Path = Field(default_factory=lambda: Path("output_data"))
