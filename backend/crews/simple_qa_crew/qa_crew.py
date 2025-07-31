@@ -2,9 +2,8 @@ from pathlib import Path
 # CreqAI imports
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+# from crewai.tasks.conditional_task import ConditionalTask
 from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
-from crewai.tasks.conditional_task import ConditionalTask
-
 ## Internal imports
 # crews
 from crews.simple_qa_crew.guardrail import validate_and_trasform
@@ -55,55 +54,15 @@ class SimpleQACrew:
     llm_mistral = get_mistral_llm()
     llm_mistral = get_mistral_llm()
 
-    supplement_knowledge_folder = Path(
-        config.paths.full_knowledge_dir
-        / "supplements/processed_papers_and_guidelines/clean_texts"
-    )
-
-    supplement_file_paths = list(Path(supplement_knowledge_folder).glob("*.txt"))  # noqa
-
-    supplement_text_source = TextFileKnowledgeSource(
-        file_paths=supplement_file_paths,
-        chunk_size=10000,
-        chunk_overlap=1000,
-    )
-
-    # disease_knowledge_folder = Path(
-    #     config.paths.full_knowledge_dir
-    #     / "disease_management/clean_texts"
-    # )
-
-    # disease_file_paths = list(Path(disease_knowledge_folder).glob("*.txt"))  # noqa
-
-    # disease_text_source = TextFileKnowledgeSource(
-    #     file_paths=disease_file_paths,
-    #     chunk_size=10000,
-    #     chunk_overlap=1000,
-    # )
-
     name = "Simple QA Crew"
 
-    def __init__(self):
+    def __init__(self, knowledge_sources: list[TextFileKnowledgeSource] | None = None):
         self.logger = get_logger(__name__)
         self.logger.info("SimpleQACrew initialized")
-
-    @agent
-    def question_filtering_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config["question_filtering_agent"],  # type: ignore
-            llm=self.llm,
-            verbose=True,
-            max_retry_limit=5,
-        )
-
-    @agent
-    def question_labelling_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config["question_labelling_agent"],  # type: ignore
-            llm=self.llm,
-            verbose=True,
-            max_retry_limit=5,
-        )
+        if knowledge_sources:
+            self.knowledge_sources = knowledge_sources
+        else:
+            self.knowledge_sources = []
 
     @agent
     def knowledge_processing_agent(self) -> Agent:
@@ -111,80 +70,39 @@ class SimpleQACrew:
             config=self.agents_config["knowledge_processing_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,        )
+            max_retry_limit=5,
+            )
 
     @agent
     def question_answering_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["question_answering_agent"],  # type: ignore
-            llm=self.llm_gemini,
+            llm=self.llm,
             fallback_llm=self.llm_mistral,
             verbose=True,
             max_retry_limit=5,
         )
 
     @task
-    def question_filtering_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["question_filtering_task"],  # type: ignore
-            output_pydantic=Question,
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-
-    @task
-    def query_type_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["query_type_task"],  # type: ignore
-            output_pydantic=Question,
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-
-    @task
-    def question_labelling_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["question_filtering_task"],  # type: ignore
-            output_pydantic=Question,
-            context=[self.question_filtering_task()],  # type: ignore
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-
-    @task
-    def supplement_knowledge_task(self) -> ConditionalTask:
+    def knowledge_task(self) -> Task:
         """Task to process the supplement knowledge source"""
-        conditional_task = ConditionalTask(
-            config=self.tasks_config["supplement_knowledge_task"],  # type: ignore
-            knowledge_sources=[self.supplement_text_source],
-            context=[self.question_labelling_task()],
+        conditional_task = Task(
+            config=self.tasks_config["knowledge_task"],  # type: ignore
+            knowledge_sources=self.knowledge_sources,
+            # context=[self.question_labelling_task()],
             output_pydantic=Question,
-            condition=is_supplement_question,
+            # condition=is_supplement_question,
             guardrail=validate_and_trasform,
             max_retries=0,
         )
         self.logger.info("Conditional supplement knowledge task created")
         return conditional_task
 
-    # @task
-    # def disease_knowledge_task(self) -> ConditionalTask:
-    #     """Task to process the supplement knowledge source"""
-    #     conditional_task = ConditionalTask(
-    #         config=self.tasks_config["disease_knowledge_task"],  # type: ignore
-    #         knowledge_sources=[self.disease_text_source],
-    #         context=[self.question_labelling_task()],
-    #         output_pydantic=Question,
-    #         condition=is_disease_question,
-    #         max_retries=0,
-    #     )
-    #     self.logger.info("Conditional supplement knowledge task created")
-    #     return conditional_task
-
     @task
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task(), self.supplement_knowledge_task()],  # type: ignore
+            # context=[self.question_labelling_task(), self.supplement_knowledge_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,

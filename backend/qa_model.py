@@ -9,8 +9,8 @@ from pydantic import BaseModel
 
 ##Internal imports
 from crews.simple_qa_crew.qa_crew import SimpleQACrew
-#from crews.question_parsing_crew.question_crew import QuestionParsingCrew
-from backend.models.questions_answers import Answer
+from crews.question_parsing_crew.question_crew import QuestionParsingCrew
+from backend.models.questions_answers import Answer, Question
 from utils.logging import get_logger
 
 class QAState(BaseModel):
@@ -18,6 +18,11 @@ class QAState(BaseModel):
   State for the documentation flow
   """
   question: str = "What is longevity?"
+  question_parsed: Question = Question(
+      question="What is longevity?",
+      is_longevity_related=True,
+      query_type="longevity question",
+      )
   improved_question: str = ""
   answer: str = ""
   request_id: int = 0
@@ -38,27 +43,26 @@ class LongevityQAFlow(Flow[QAState]):
   def process_question(self):
     self.logger.info("Processing question")
 
-    # qa_crew = QuestionParsingCrew()
-    # question_parsed: Question = qa_crew.kickoff(inputs={"question": self.state.question})
-    # self.state.question_parsed = question_parsed.pydantic
+    input_crew = QuestionParsingCrew()
+    question_parsed: Question = input_crew.kickoff(inputs={"question": self.state.question})
+    self.state.question_parsed = question_parsed.pydantic
 
-    # self.logger.info("Processing input completed")
-
-    qa_crew = SimpleQACrew()
-    answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
-    self.state.answer = answer.pydantic
+    # qa_crew = SimpleQACrew()
+    # answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
+    # self.state.answer = answer.pydantic
 
     self.logger.info("Processing input completed")
-    return self.state.answer
+    return self.state
 
-  # @listen(process_question)
-  # def answer_question(self):
-  #     qa_crew = SimpleQACrew()
-  #     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question_parsed})
-  #     self.state.answer = answer.pydantic
+  @listen(process_question)
+  def answer_question(self):
+      qa_crew = SimpleQACrew()
+      answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question_parsed.model_dump_json()})
+      self.state.answer = answer.pydantic
+      self.state.answer_str = str(answer.answer)
 
-  #     self.logger.info("Processing input completed")
-  #     return self.state.answer
+      self.logger.info("Answer Completed",)
+      return self.state
 
 class QAModel:
     def __init__(self, model_name: str):
@@ -81,6 +85,6 @@ class QAModel:
         self.logger.info("Starting QA flow", extra={"question": question})
         #input_state = QAState(question=question)
         results = qa_flow.kickoff()
-        self.logger.info("Got response", extra={"answer": results})
-        return results.answer
+        self.logger.info("Got response", extra={"answer": results.answer.answer})
+        return results.answer_str
 

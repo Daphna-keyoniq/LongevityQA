@@ -6,7 +6,7 @@ from crewai.project import CrewBase, agent, crew, task
 # crews
 from crews.simple_qa_crew.guardrail import validate_and_trasform
 # models
-from backend.models.questions_answers import Answer, Question
+from backend.models.questions_answers import Question
 
 # tools
 from llm.llm import get_deterministic_llm, get_gemini_llm
@@ -42,13 +42,12 @@ class QuestionParsingCrew:
         )
 
     @agent
-    def question_answering_agent(self) -> Agent:
+    def question_labelling_agent(self) -> Agent:
         return Agent(
-            config=self.agents_config["question_answering_agent"],  # type: ignore
+            config=self.agents_config["question_labelling_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
             max_retry_limit=5,
-            # knowledge_sources=[self.supplement_text_source]
         )
 
     @task
@@ -60,6 +59,14 @@ class QuestionParsingCrew:
             max_retries=0,
         )
 
+    @task
+    def query_type_task(self) -> Task:
+        return Task(
+            config=self.tasks_config["query_type_task"],  # type: ignore
+            output_pydantic=Question,
+            guardrail=validate_and_trasform,
+            max_retries=0,
+        )
 
     @task
     def question_labelling_task(self) -> Task:
@@ -67,16 +74,6 @@ class QuestionParsingCrew:
             config=self.tasks_config["question_filtering_task"],  # type: ignore
             output_pydantic=Question,
             context=[self.question_filtering_task()],  # type: ignore
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-
-    @task
-    def question_answering_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task()],  # type: ignore
-            output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,
         )
@@ -90,7 +87,6 @@ class QuestionParsingCrew:
             tasks=self.tasks,  # Automatically created by the @task decorator # type: ignore
             process=Process.sequential,
             verbose=True,
-            # output_log_file="logs/crews/simple_qa_crew.json",  # if log_path is False, then no log file will be created
             name=self.name,
         )
 
