@@ -53,22 +53,21 @@ class SimpleQACrew:
     llm = get_deterministic_llm()
     llm_gemini = get_gemini_llm()
     llm_mistral = get_mistral_llm()
-    llm_mistral = get_mistral_llm()
 
-    supplement_knowledge_folder = Path(
-        config.paths.full_knowledge_dir
-        / "supplements/processed_papers_and_guidelines/clean_texts"
-    )
+    # supplement_knowledge_folder = Path(
+    #     config.paths.full_knowledge_dir
+    #     / "supplements/processed_papers_and_guidelines/clean_texts"
+    # )
 
-    supplement_file_paths = list(Path(supplement_knowledge_folder).glob("*.txt"))  # noqa
+    # supplement_file_paths = list(Path(supplement_knowledge_folder).glob("*.txt"))  # noqa
 
-    supplement_text_source = TextFileKnowledgeSource(
-        file_paths=supplement_file_paths,
-        chunk_size=10000,
-        chunk_overlap=1000,
-    )
+    # supplement_text_source = TextFileKnowledgeSource(
+    #     file_paths=supplement_file_paths,
+    #     chunk_size=10000,
+    #     chunk_overlap=1000,
+    # )
 
-    # disease_knowledge_folder = Path(
+    # # disease_knowledge_folder = Path(
     #     config.paths.full_knowledge_dir
     #     / "disease_management/clean_texts"
     # )
@@ -93,7 +92,6 @@ class SimpleQACrew:
             config=self.agents_config["question_filtering_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,
         )
 
     @agent
@@ -102,7 +100,6 @@ class SimpleQACrew:
             config=self.agents_config["question_labelling_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,
         )
 
     @agent
@@ -111,7 +108,7 @@ class SimpleQACrew:
             config=self.agents_config["knowledge_processing_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,        )
+            max_retry_limit=1,        )
 
     @agent
     def question_answering_agent(self) -> Agent:
@@ -120,7 +117,7 @@ class SimpleQACrew:
             llm=self.llm_gemini,
             fallback_llm=self.llm_mistral,
             verbose=True,
-            max_retry_limit=5,
+            max_retry_limit=1,
         )
 
     @task
@@ -151,20 +148,20 @@ class SimpleQACrew:
             max_retries=0,
         )
 
-    @task
-    def supplement_knowledge_task(self) -> ConditionalTask:
-        """Task to process the supplement knowledge source"""
-        conditional_task = ConditionalTask(
-            config=self.tasks_config["supplement_knowledge_task"],  # type: ignore
-            knowledge_sources=[self.supplement_text_source],
-            context=[self.question_labelling_task()],
-            output_pydantic=Question,
-            condition=is_supplement_question,
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
-        self.logger.info("Conditional supplement knowledge task created")
-        return conditional_task
+    # @task
+    # def supplement_knowledge_task(self) -> ConditionalTask:
+    #     """Task to process the supplement knowledge source"""
+    #     conditional_task = ConditionalTask(
+    #         config=self.tasks_config["supplement_knowledge_task"],  # type: ignore
+    #         knowledge_sources=[self.supplement_text_source],
+    #         context=[self.question_labelling_task()],
+    #         output_pydantic=Question,
+    #         condition=is_supplement_question,
+    #         guardrail=validate_and_trasform,
+    #         max_retries=0,
+    #     )
+    #     self.logger.info("Conditional supplement knowledge task created")
+    #     return conditional_task
 
     # @task
     # def disease_knowledge_task(self) -> ConditionalTask:
@@ -184,7 +181,7 @@ class SimpleQACrew:
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task(), self.supplement_knowledge_task()],  # type: ignore
+            context=[self.question_labelling_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
             max_retries=0,
