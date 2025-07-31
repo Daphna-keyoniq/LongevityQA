@@ -1,6 +1,4 @@
-from transformers import pipeline
 from llm.llm import get_deterministic_llm
-
 
 
 
@@ -40,8 +38,8 @@ def is_greeting(question: str) -> bool:
     Returns:
         bool: True if the question is a greeting, False otherwise.
     """
-    greetings = ["hello", "hi", "hey", "greetings", "good morning", "good afternoon", "good evening"]
-    return any(greeting in question.lower() for greeting in greetings)
+    greetings = ["hello", "hi", "hey", "hoi", "what's up"]
+    return question.strip().strip("!").strip().lower() in greetings
 
 def is_farewell(question: str) -> bool:
     """
@@ -53,6 +51,6 @@ def is_farewell(question: str) -> bool:
     Returns:
         bool: True if the question is a farewell, False otherwise.
     """
-    farewells = ["bye", "goodbye", "see you", "take care", "farewell"]
-    return any(farewell in question.lower() for farewell in farewells)
+    farewells = ["bye", "goodbye", "see you", "take care", "farewell", "good-bye"]
+    return any(farewell in question.strip().strip("!").strip().lower() for farewell in farewells)
 

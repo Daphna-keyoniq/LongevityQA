@@ -2,8 +2,8 @@ from pathlib import Path
 # CreqAI imports
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
-from crewai.tasks.conditional_task import ConditionalTask
+# from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
+# from crewai.tasks.conditional_task import ConditionalTask
 
 ## Internal imports
 # crews
@@ -75,14 +75,14 @@ class SimpleQACrew:
             max_retries=0,
         )
 
-    @task
-    def query_type_task(self) -> Task:
-        return Task(
-            config=self.tasks_config["query_type_task"],  # type: ignore
-            output_pydantic=Question,
-            guardrail=validate_and_trasform,
-            max_retries=0,
-        )
+    # @task
+    # def query_type_task(self) -> Task:
+    #     return Task(
+    #         config=self.tasks_config["query_type_task"],  # type: ignore
+    #         output_pydantic=Question,
+    #         guardrail=validate_and_trasform,
+    #         max_retries=0,
+    #     )
 
     @task
     def question_labelling_task(self) -> Task:
@@ -93,7 +93,6 @@ class SimpleQACrew:
             guardrail=validate_and_trasform,
             max_retries=0,
         )
-
 
     @task
     def question_answering_task(self) -> Task:

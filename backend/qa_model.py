@@ -12,6 +12,7 @@ from crews.simple_qa_crew.qa_crew import SimpleQACrew
 #from crews.question_parsing_crew.question_crew import QuestionParsingCrew
 from backend.models.questions_answers import Answer
 from utils.logging import get_logger
+from backend.llm_layers import is_greeting, is_farewell
 
 class QAState(BaseModel):
   """
@@ -37,7 +38,16 @@ class LongevityQAFlow(Flow[QAState]):
   @start()
   def process_question(self):
     self.logger.info("Processing question")
-    self.state = QAState(question=self.state.question, request_id=self.state.request_id)
+
+    if is_greeting(self.state.question):
+      self.logger.info("Detected greeting in question")
+      self.state.answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""
+      return self.state.answer
+
+    elif is_farewell(self.state.question):
+      self.logger.info("Detected farewell in question")
+      self.state.answer = """Goodbye! Have a great day!"""
+      return self.state.answer
 
     qa_crew = SimpleQACrew()
     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})

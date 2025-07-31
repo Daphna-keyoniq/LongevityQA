@@ -3,13 +3,7 @@ import type { FormEvent } from "react";
 import ReactDOM from "react-dom/client";
 import TextBox from "./components/TextBox.tsx"; // Import the TextBox component
 import "./styles/App.css"; // Import the CSS file
-// import Button from "./components/Button.tsx"; // Import the Button component
 import Loader from "./components/Loader.tsx";
-// import 'ldrs/helix'
-
-// // Manually defined
-// import { helix } from 'ldrs'
-// helix.register("l-helix")
 
 /**
  * The main application component for the Longevity Question & Answering App.
@@ -37,7 +31,7 @@ const LongevityQAApp: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://172.161.85.236:8012",{ // "/api/ask", {
+      const response = await fetch( "/api/ask", {//"http://172.161.85.236:8012",{ //
         method: "POST",
         headers: {
           "Content-Type": "application/json",
