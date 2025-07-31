@@ -12,6 +12,7 @@ class QueryType(BaseModel):
 class Question(BaseModel):
     question: str
     is_longevity_related: bool = True
+    query_type: str = "general"
     labels: list[str] = []
     knowledge_summary: str = ""
 
