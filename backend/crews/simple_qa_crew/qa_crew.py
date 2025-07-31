@@ -13,7 +13,6 @@ from backend.models.questions_answers import Answer, Question
 
 # tools
 from llm.llm import get_deterministic_llm, get_gemini_llm, get_mistral_llm
-from llm.llm import get_deterministic_llm, get_gemini_llm, get_mistral_llm
 from utils.logging import log_execution_time, get_logger
 from config import Config
 config = Config().load_configuration()
@@ -119,7 +118,6 @@ class SimpleQACrew:
         return Agent(
             config=self.agents_config["question_answering_agent"],  # type: ignore
             llm=self.llm_gemini,
-            fallback_llm=self.llm_mistral,
             fallback_llm=self.llm_mistral,
             verbose=True,
             max_retry_limit=5,
