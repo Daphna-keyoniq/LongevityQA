@@ -37,12 +37,7 @@ class LongevityQAFlow(Flow[QAState]):
   @start()
   def process_question(self):
     self.logger.info("Processing question")
-
-    # qa_crew = QuestionParsingCrew()
-    # question_parsed: Question = qa_crew.kickoff(inputs={"question": self.state.question})
-    # self.state.question_parsed = question_parsed.pydantic
-
-    # self.logger.info("Processing input completed")
+    self.state = QAState(question=self.state.question, request_id=self.state.request_id)
 
     qa_crew = SimpleQACrew()
     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
@@ -50,15 +45,6 @@ class LongevityQAFlow(Flow[QAState]):
 
     self.logger.info("Processing input completed")
     return self.state.answer
-
-  # @listen(process_question)
-  # def answer_question(self):
-  #     qa_crew = SimpleQACrew()
-  #     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question_parsed})
-  #     self.state.answer = answer.pydantic
-
-  #     self.logger.info("Processing input completed")
-  #     return self.state.answer
 
 class QAModel:
     def __init__(self, model_name: str):
@@ -83,4 +69,9 @@ class QAModel:
         results = qa_flow.kickoff()
         self.logger.info("Got response", extra={"answer": results})
         return results.answer
+
+    def ask2(self, question:str) -> str:
+       answer = question
+
+       return answer
 

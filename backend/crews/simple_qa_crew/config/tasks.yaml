@@ -47,21 +47,3 @@ question_labelling_task:
     - Sleep: Questions related to sleep
     Please provide a list of the labels most relevant to the question, separated by commas. If the question does not fit any of these categories, return an empty list.
   agent: question_labelling_agent
-supplement_knowledge_task:
-  description: >
-    Process knowledge relevant to supplements in longevity medicine, to provide accurate and up-to-date information for the question answering agent.
-  expected_output: >
-    Question: {question}
-    You are given a user input to the longevity question answering system.
-    Please process the knowledge relevant to supplements in longevity medicine, including the latest scientific findings, practical applications, and any relevant studies or data.
-    Your output is a short summary of the knwowledge relevant to the question being asked. Ensure that the information is accurate, concise, and helpful to answering the question. 
-  agent: knowledge_processing_agent
-disease_knowledge_task:
-  description: >
-    Process knowledge relevant to diseases and conditions that may affect aging and long-term health, to provide accurate and up-to-date information for the question answering agent.
-  expected_output: >
-    Question: {question}
-    You are given a user input to the longevity question answering system.
-    Please process the knowledge available to you, relevant to age related diseases and conditions, their prevention and their management. 
-    Your output is a short summary of the knwowledge relevant to the question being asked. Ensure that the information is accurate, concise, and helpful to answering the question. 
-  agent: knowledge_processing_agent
