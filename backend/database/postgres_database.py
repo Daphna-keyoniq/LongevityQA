@@ -18,10 +18,6 @@ class PostgresDatabase(BaseDatabase):
             config: Database configuration containing connection details
         """
         self.config = dict(dbname=dbname, user=user, password=password, host=host, port=port)
-
-        # Log the actual databse we're using
-        #logger.info(f"Using database {dbname}@{host} as {user}")
-
         try:
             # Test connection
             conn = psycopg2.connect(**self.config)
@@ -84,7 +80,7 @@ class PostgresDatabase(BaseDatabase):
             logger.info(f"{cur.query}: {cur.statusmessage}")
             return result[0] if result else None
 
-    def query_one(self, query: str, params: tuple = ()) -> Optional[tuple]:
+    async def query_one(self, query: str, params: tuple = ()) -> Optional[tuple]:
         """Execute a query and return one result.
 
         Args:
@@ -96,7 +92,7 @@ class PostgresDatabase(BaseDatabase):
         """
         with self.get_connection() as conn:
             cur = conn.cursor()
-            cur.execute(self._format_query(query), params)
+            cur.execute(query, params)
             logger.info(f"{cur.query}: {cur.statusmessage}")
             result = cur.fetchone()
             conn.commit()

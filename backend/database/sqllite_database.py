@@ -4,8 +4,9 @@ from contextlib import contextmanager
 import os
 import os.path
 
-from medai_flow.database.base_database import BaseDatabase
-from medai_flow.utils.logging import get_logger
+## Internal imports
+from database.base_database import BaseDatabase
+from utils.logging import get_logger
 
 # Initialize logger
 logger = get_logger(__name__)

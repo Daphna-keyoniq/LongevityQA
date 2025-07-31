@@ -58,8 +58,8 @@ class LongevityQAFlow(Flow[QAState]):
   def answer_question(self):
       qa_crew = SimpleQACrew()
       answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question_parsed.model_dump_json()})
+      self.logger.debug(f"Kickoff result: {answer}")
       self.state.answer = answer.pydantic
-      self.state.answer_str = str(answer.answer)
 
       self.logger.info("Answer Completed",)
       return self.state
@@ -70,9 +70,9 @@ class QAModel:
         self.model_name = model_name
         self.logger = get_logger(__name__)
 
-    def add_knowledge(self, question: str, answer: str):
-        """Add a question and its answer to the QA database."""
-        self.qa_database[question] = answer
+    # def add_knowledge(self, question: str, answer: str):
+    #     """Add a question and its answer to the QA database."""
+    #     self.qa_database[question] = answer
 
     def ask(self, question: str) -> str:
         """
@@ -86,5 +86,4 @@ class QAModel:
         #input_state = QAState(question=question)
         results = qa_flow.kickoff()
         self.logger.info("Got response", extra={"answer": results.answer.answer})
-        return results.answer_str
-
+        return results.answer.answer

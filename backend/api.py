@@ -10,20 +10,20 @@ load_dotenv()
 from qa_api.qa_api import LongevityQAAPI, LongevityQAServer
 from qa_api.qa_service import LongevityQAService
 from config import Config
-# from utils.task_manager import TaskManagerRepository
-# from database.postgres_database import PostgresDatabase
+from utils.task_manager import TaskManagerRepository
+from database.postgres_database import PostgresDatabase
 config = Config().load_configuration(type="prod")
 
 def setup():
     # Initialize dependencies
-    # database = PostgresDatabase(**config.database.db_config)
-    # task_manager = TaskManagerRepository(database)
+    database = PostgresDatabase(**config.database.db_config)
+    #task_manager = TaskManagerRepository(database)
 
     # Create server
     server = LongevityQAServer()
 
     # Create business services
-    service = LongevityQAService()#task_manager)
+    service = LongevityQAService(database)
 
     # Api endpoints
     api = LongevityQAAPI(service)

@@ -1,6 +1,6 @@
 # filepath: /home/dafne/code/QA_model/src/qa_api/qa_api.py
 from pydantic import BaseModel
-from fastapi import APIRouter, FastAPI
+from fastapi import APIRouter, FastAPI, Depends, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.middleware import SlowAPIMiddleware
@@ -8,6 +8,8 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 import uvicorn
 import sys
+import redis
+import uuid
 sys.path.append("..")
 sys.path.append("../..")
 from dotenv import load_dotenv
@@ -17,7 +19,10 @@ load_dotenv()
 ## Internal imports
 from qa_model import QAModel
 from qa_api.qa_service import LongevityQAService
+from backend.utils.task_manager import TaskStatus #User,
 
+# # In-memory store (reset on restart, not shared between workers)
+# jobs = {}
 
 class InputModel(BaseModel):
     question: str
@@ -49,6 +54,27 @@ class LongevityQAAPI:
             model = QAModel(model_name="longevity_qa_model")
             answer = model.ask(question=input.question)
             return {"answer": answer}
+
+        @self.router.post("/startask", response_model=OutputModel)
+        async def start_ask_question(background_tasks: BackgroundTasks, input: InputModel):
+            """Endpoint to handle question and return an answer."""
+            result = await self.qa_service.create_task(input.question)
+            # Start processing in background
+            background_tasks.add_task(
+                self.qa_service.process_question,
+                int(result["task_id"]),
+                result["temp_dir"],
+            )
+            return {"task_id": result["task_id"], "message": result["message"], "answer": result["answer"]}
+
+        @self.router.post("/tasks/")
+        async def create_task(task_id: int, background_tasks: BackgroundTasks):
+            background_tasks.add_task(self.qa_service.process_question, task_id)
+            return {"message": f"Task {task_id} is being processed in the background."}
+
+        @self.router.get("/task/{task_id}")
+        async def get_task_status(task_id: int,) -> TaskStatus:
+            return await self.qa_service.get_task_status(task_id)
 
 
 class LongevityQAServer:

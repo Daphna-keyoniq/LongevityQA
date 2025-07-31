@@ -26,6 +26,7 @@ class TaskStatus(BaseModel):
     """Model for task status information."""
 
     task_id: int
+    task_input: str
     status: str
     message: str
     record_entered_timestamp: datetime
@@ -34,6 +35,15 @@ class TaskStatus(BaseModel):
 class Rating(BaseModel):
     task_id: int
     rating: str
+
+class User(BaseModel):
+    """Base model for user information."""
+
+    user_id: int
+    username: str
+    email: str
+    created_at: datetime
+    is_superuser: bool
 
 
 class TaskManagerRepository:
@@ -79,11 +89,11 @@ class TaskManagerRepository:
         self.database.execute(
             f"""
             CREATE TABLE IF NOT EXISTS {schema_prefix}task_data (
-                task_id INTEGER NOT NULL,
-                input_data BLOB,
-                output_data BLOB,
-                PRIMARY KEY (task_id),
-                FOREIGN KEY(task_id) REFERENCES {schema_prefix}tasks(task_id)
+            task_id INTEGER NOT NULL,
+            input_data TEXT,
+            output_data TEXT,
+            PRIMARY KEY (task_id),
+            FOREIGN KEY(task_id) REFERENCES {schema_prefix}tasks(task_id)
             )
         """
         )
@@ -95,37 +105,6 @@ class TaskManagerRepository:
             """)
         except Exception as e:
             logger.warning(f"Error adding is_superuser column: {e}")
-
-        # Create or alter ratings table to include comments
-        self.database.execute(f"""
-            CREATE TABLE IF NOT EXISTS {schema_prefix}ratings (
-                rating_id SERIAL PRIMARY KEY,
-                task_id INTEGER NOT NULL,
-                type TEXT NOT NULL,
-                recommendation_id INTEGER NOT NULL,
-                recommendation_name TEXT NOT NULL,
-                rating INTEGER,
-                comment TEXT,
-                user_id INTEGER NOT NULL,
-                created_at TIMESTAMP NOT NULL,
-                FOREIGN KEY(task_id) REFERENCES {schema_prefix}tasks(task_id),
-                FOREIGN KEY(user_id) REFERENCES {schema_prefix}users(user_id)
-            )
-        """)
-
-        # Create task files table for Azure Blob Storage files
-        self.database.execute(f"""
-            CREATE TABLE IF NOT EXISTS {schema_prefix}task_files (
-                file_id UUID PRIMARY KEY,
-                task_id INTEGER NOT NULL,
-                filename TEXT NOT NULL,
-                mime_type TEXT NOT NULL,
-                object_key TEXT NOT NULL,
-                size_bytes INTEGER NOT NULL,
-                created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY(task_id) REFERENCES {schema_prefix}tasks(task_id)
-            )
-        """)
 
     def create_task(self) -> int:
         """Create a new task and return its ID.
@@ -141,7 +120,6 @@ class TaskManagerRepository:
         """)
         return task_id[0]
 
-    
     def save_task(
         self,
         task_status: TaskStatus,
@@ -157,7 +135,6 @@ class TaskManagerRepository:
         """
         schema_prefix = f"{self.schema_name}." if self.schema_name else ""
 
-     
         current_status = self.get_task_status_history(task_status.task_id)
         if any(status.status == "completed" for status in current_status):
             return
