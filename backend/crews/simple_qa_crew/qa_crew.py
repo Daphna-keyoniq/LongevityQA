@@ -63,7 +63,7 @@ class SimpleQACrew:
             llm=self.llm_gemini,
             fallback_llm=self.llm_mistral,
             verbose=True,
-            max_retry_limit=5,
+            max_retry_limit=1,
         )
 
     @task
@@ -89,6 +89,7 @@ class SimpleQACrew:
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
+            context=[self.question_labelling_task()],  # type: ignore
             context=[self.question_labelling_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
