@@ -11,6 +11,8 @@ import sys
 sys.path.append("..")
 sys.path.append("../..")
 from dotenv import load_dotenv
+import asyncio
+from asyncio import to_thread
 
 load_dotenv()
 
@@ -18,6 +20,8 @@ load_dotenv()
 from qa_model import QAModel
 # from qa_api.qa_service import LongevityQAService
 
+import logging
+logger = logging.getLogger(__name__)
 
 class InputModel(BaseModel):
     question: str
@@ -26,9 +30,9 @@ class OutputModel(BaseModel):
     answer: str
 
 class LongevityQAAPI:
-    def __init__(self):
+    def __init__(self, longevityqa_service):
         self.router = APIRouter(tags=["longevity qa"])
-        # self.qa_service = longevityqa_service
+        self.qa_service = longevityqa_service
         self._setup_routes()
 
     def _setup_routes(self):
@@ -44,11 +48,12 @@ class LongevityQAAPI:
             return {"status": "healthy"}
 
         @self.router.post("/ask", response_model=OutputModel)
-        async def ask_question(input: InputModel):
-                """Endpoint to handle question and return an answer."""
-                model = QAModel(model_name="longevity_qa_model")
-                answer = model.ask(question=input.question)
-                return {"answer": answer}
+        def ask_question(input: dict[str, str]):
+            """Endpoint to handle question and return an answer."""
+            logger.info(f"Received input: {input}")
+            model = QAModel(model_name="longevity_qa_model")
+            answer = model.ask(question=str(input["question"]))
+            return {"answer": answer}
 
 class LongevityQAServer:
     """Server class handling FastAPI setup and authentication."""
@@ -97,7 +102,7 @@ class LongevityQAServer:
         """
         self.app.include_router(router)
 
-    def run(self, port: int = 8011) -> None:
+    def run(self, port: int = 8012) -> None:
         """Run the FastAPI application."""
         uvicorn.run(self.app, host="0.0.0.0", port=port, reload=False)
 

@@ -63,19 +63,19 @@ class QAModel:
         if is_greeting(question):
           self.logger.info("Detected greeting in question")
           answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""
-          return answer
+          return str(answer)
 
         elif is_farewell(question):
           self.logger.info("Detected farewell in question")
           answer = """Goodbye! Have a great day!"""
-          return answer
+          return str(answer)
         
         qa_flow = LongevityQAFlow(question=question)
         self.logger.info("Starting QA flow", extra={"question": question})
         #input_state = QAState(question=question)
         results = qa_flow.kickoff()
         self.logger.info("Got response", extra={"answer": results})
-        return results.answer
+        return str(results.answer)
 
     def ask2(self, question:str) -> str:
        answer = question

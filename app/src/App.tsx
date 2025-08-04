@@ -32,7 +32,7 @@ const LongevityQAApp: React.FC = () => {
     }
 
     try {
-      const response = await fetch( "http://172.161.85.236:8012/ask",{ //"/api/ask", {//
+      const response = await fetch( "/api/ask", {//"http://0.0.0.0:8012/ask",{ //
         method: "POST",
         headers: {
           "Content-Type": "application/json",
