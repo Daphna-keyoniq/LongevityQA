@@ -23,10 +23,10 @@ def setup():
     server = LongevityQAServer()
 
     # Create business services
-    service = LongevityQAService()#task_manager)
+    # service = LongevityQAService()#task_manager)
 
     # Api endpoints
-    api = LongevityQAAPI(service)
+    api = LongevityQAAPI()
 
     # Register api endpoints on the server
     server.add_routes(api.router)

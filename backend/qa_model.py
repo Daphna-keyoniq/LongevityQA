@@ -59,6 +59,7 @@ class QAModel:
         This method uses the LongevityQAFlow class to process the question
         and generate an answer.
         """
+        self.logger.info(f"Received question: {question}")
         if is_greeting(question):
           self.logger.info("Detected greeting in question")
           answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""

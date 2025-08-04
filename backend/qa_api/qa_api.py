@@ -16,7 +16,7 @@ load_dotenv()
 
 ## Internal imports
 from qa_model import QAModel
-from qa_api.qa_service import LongevityQAService
+# from qa_api.qa_service import LongevityQAService
 
 
 class InputModel(BaseModel):
@@ -26,9 +26,9 @@ class OutputModel(BaseModel):
     answer: str
 
 class LongevityQAAPI:
-    def __init__(self, longevityqa_service: LongevityQAService):
+    def __init__(self):
         self.router = APIRouter(tags=["longevity qa"])
-        self.qa_service = longevityqa_service
+        # self.qa_service = longevityqa_service
         self._setup_routes()
 
     def _setup_routes(self):
