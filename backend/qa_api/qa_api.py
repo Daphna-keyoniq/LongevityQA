@@ -44,12 +44,11 @@ class LongevityQAAPI:
             return {"status": "healthy"}
 
         @self.router.post("/ask", response_model=OutputModel)
-        def ask_question(input: InputModel):
-            """Endpoint to handle question and return an answer."""
-            model = QAModel(model_name="longevity_qa_model")
-            answer = model.ask(question=input.question)
-            return {"answer": answer}
-
+        async def ask_question(input: InputModel):
+                """Endpoint to handle question and return an answer."""
+                model = QAModel(model_name="longevity_qa_model")
+                answer = model.ask(question=input.question)
+                return {"answer": answer}
 
 class LongevityQAServer:
     """Server class handling FastAPI setup and authentication."""

@@ -56,7 +56,7 @@ else:
 root_logger.addHandler(console_handler)
 
 # Create file handler for all logs
-file_handler = logging.FileHandler(f"logs/medai_flow_{datetime.now().strftime('%Y%m%d')}.log")
+file_handler = logging.FileHandler(f"logs/qa_{datetime.now().strftime('%Y%m%d')}.log")
 if LOG_FORMAT.lower() == "json":
     file_handler.setFormatter(JsonFormatter())
 else:
@@ -66,7 +66,7 @@ else:
 root_logger.addHandler(file_handler)
 
 # Create separate file handler for errors
-error_handler = logging.FileHandler(f"logs/medai_flow_errors_{datetime.now().strftime('%Y%m%d')}.log")
+error_handler = logging.FileHandler(f"logs/lqa_errors_{datetime.now().strftime('%Y%m%d')}.log")
 error_handler.setLevel(logging.ERROR)
 if LOG_FORMAT.lower() == "json":
     error_handler.setFormatter(JsonFormatter())

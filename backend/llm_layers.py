@@ -52,5 +52,5 @@ def is_farewell(question: str) -> bool:
         bool: True if the question is a farewell, False otherwise.
     """
     farewells = ["bye", "goodbye", "see you", "take care", "farewell", "good-bye"]
-    return any(farewell in question.strip().strip("!").strip().lower() for farewell in farewells)
+    return question.strip().strip("!").strip().lower() in farewells
 

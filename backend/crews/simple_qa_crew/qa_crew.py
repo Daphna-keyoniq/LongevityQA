@@ -44,7 +44,7 @@ class SimpleQACrew:
             config=self.agents_config["question_filtering_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,
+            max_retry_limit=2,
         )
 
     @agent
@@ -53,7 +53,7 @@ class SimpleQACrew:
             config=self.agents_config["question_labelling_agent"],  # type: ignore
             llm=self.llm,
             verbose=True,
-            max_retry_limit=5,
+            max_retry_limit=2,
         )
 
     @agent
@@ -74,15 +74,6 @@ class SimpleQACrew:
             guardrail=validate_and_trasform,
             max_retries=0,
         )
-
-    # @task
-    # def query_type_task(self) -> Task:
-    #     return Task(
-    #         config=self.tasks_config["query_type_task"],  # type: ignore
-    #         output_pydantic=Question,
-    #         guardrail=validate_and_trasform,
-    #         max_retries=0,
-    #     )
 
     @task
     def question_labelling_task(self) -> Task:

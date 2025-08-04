@@ -39,16 +39,6 @@ class LongevityQAFlow(Flow[QAState]):
   def process_question(self):
     self.logger.info("Processing question")
 
-    if is_greeting(self.state.question):
-      self.logger.info("Detected greeting in question")
-      self.state.answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""
-      return self.state.answer
-
-    elif is_farewell(self.state.question):
-      self.logger.info("Detected farewell in question")
-      self.state.answer = """Goodbye! Have a great day!"""
-      return self.state.answer
-
     qa_crew = SimpleQACrew()
     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
     self.state.answer = answer.pydantic
@@ -62,10 +52,6 @@ class QAModel:
         self.model_name = model_name
         self.logger = get_logger(__name__)
 
-    def add_knowledge(self, question: str, answer: str):
-        """Add a question and its answer to the QA database."""
-        self.qa_database[question] = answer
-
     def ask(self, question: str) -> str:
         """
         Retrieve the answer to a question from the QA database.
@@ -73,6 +59,16 @@ class QAModel:
         This method uses the LongevityQAFlow class to process the question
         and generate an answer.
         """
+        if is_greeting(question):
+          self.logger.info("Detected greeting in question")
+          answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""
+          return answer
+
+        elif is_farewell(question):
+          self.logger.info("Detected farewell in question")
+          answer = """Goodbye! Have a great day!"""
+          return answer
+        
         qa_flow = LongevityQAFlow(question=question)
         self.logger.info("Starting QA flow", extra={"question": question})
         #input_state = QAState(question=question)
