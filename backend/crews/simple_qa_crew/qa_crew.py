@@ -1,4 +1,4 @@
-from pathlib import Path
+# from pathlib import Path
 # CreqAI imports
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
@@ -89,7 +89,6 @@ class SimpleQACrew:
     def question_answering_task(self) -> Task:
         return Task(
             config=self.tasks_config["question_answering_task"],  # type: ignore
-            context=[self.question_labelling_task()],  # type: ignore
             context=[self.question_labelling_task()],  # type: ignore
             output_pydantic=Answer,
             guardrail=validate_and_trasform,
