@@ -73,7 +73,7 @@ const predefinedQAData = [
   {
     category: "Exercise",
     question: "Aerobic vs. Resistance Training",
-    answer: "The two main types of exercise are aerobic (cardiovascular) and anaerobic strength training, also called resistance training. Aerobic exercise includes activities like running, swimming, and cycling, which improve cardiovascular health and endurance. Anaerobic exercise includes weightlifting and resistance training, which build muscle strength and mass."
+    answer: "The two main types of exercise are aerobic/cardiovascular exercise and resistance/strength training. Aerobic exercise improves cardiovascular health and endurance, and includes activities like running, swimming, and cycling. It is typically performed against a relatively low load over a long duration. Strength training in turn improves physical strength, builds muscle strength and muscle mass, and includes activities such as weightlifting. Many sport activities combine both endurance and strength training, such as rowing, martial arts, and climbing."
   },
   {
     category: "Nutrition",
