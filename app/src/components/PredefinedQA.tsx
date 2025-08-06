@@ -26,6 +26,11 @@ const predefinedQAData = [
     answer: "Longevity treatments include lifestyle modifications, nutritional interventions, exercise programs, supplements, and advanced medical therapies. Some longevity medications exist, often in the form of repurposed drugs, with new evidence coming out that these medications also have a positive effect of slowing down aging."
   },
   {
+    category: "General Information",
+    question: "The 6 pillars of longevity",
+    answer: "The 6 pillars of longevity are: 1) Nutrition: A balanced diet rich in whole foods, fruits, vegetables, and healthy fats. 2) Exercise & physical activity, including both aerobic and resistance training. 3) Quality Sleep. 4) Mental & Emotional Health, with a focus on happinnes and emotional wellbeing, through stress reduction methods, mindfulness, meditation, and relaxation to reduce stress. 5) Social Connections: Maintaining strong relationships and positive social interactions. 6) Supplements & Medications, and avoidance of harmful substances."
+  },
+  {
     category: "Longevity Medications",
     question: "What are repurposed longevity drugs?",
     answer: "Repurposed longevity drugs, such as metformin and rapamycin, refer to medications that were developed and approved for one disease, and later found to also be useful as longevity medications. Resaerch on these drugs as longevity treatments is larger new, and often still ongoing, but they have shown promise in extending lifespan and healthspan in various studies."
@@ -69,6 +74,56 @@ const predefinedQAData = [
     category: "Nutrition",
     question: "Sugar",
     answer: "Sugar, particularly added sugars, can have negative effects on health, including increased risk of obesity, type 2 diabetes, and heart disease. It is recommended to limit added sugars in the diet and focus on whole foods with natural sugars, such as fruits."
+  }, 
+  {
+    category: "Nutrition",
+    question: "Leafy Greens",
+    answer: "Leafy greens, such as spinach, kale, and Swiss chard, are rich in vitamins, minerals, and antioxidants. They are low in calories and high in fiber, making them beneficial for weight management and overall health. Regular consumption of leafy greens is associated with reduced risk of chronic diseases."
+  }, 
+  {
+    category: "Nutrition",
+    question: "Olive Oil",
+    answer: "Olive oil is a staple of the Mediterranean diet and is known for its health benefits, including anti-inflammatory properties, heart health support, and potential longevity benefits. It is rich in monounsaturated fats and antioxidants, making it a healthy choice for cooking and salad dressings."
+  }, 
+  {
+    category: "Nutrition",
+    question: "Protein",
+    answer: "Protein is also important for longevity and maintaining strength as you age. When you eat protein from food, it’s broken down into individual amino acids, and these amino acids are used to form the structural elements of your body such as muscles, tendons, ligaments, and collagen.  Without adequate protein, you may be at increased risk for sarcopenia, i.e. age-related muscle loss, which, in turn, may impair physical activity and increase risk of falls and death. Consuming adequate protein also helps prevent dangerous spikes in blood sugar."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "What are the most common age-related diseases?",
+    answer: "The most common age-related diseases include cardiovascular diseases, diabetes, Alzheimer's disease and other dementias, osteoporosis, arthritis, and certain cancers. These conditions are often associated with aging and can significantly impact quality of life."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Type 2 Diabetes",
+    answer: "Type 2 diabetes is a chronic condition that affects the way the body processes blood sugar (glucose). It is characterized by insulin resistance, where the body's cells do not respond effectively to insulin, leading to elevated blood sugar levels. Lifestyle changes, such as diet and exercise, along with medications, can help manage the condition."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Cardiovascular Diseases",
+    answer: "Cardiovascular diseases (CVD) are a group of disorders affecting the heart and blood vessels, including coronary artery disease, heart failure, and stroke. They are often caused by a combination of genetic factors, lifestyle choices, and other health conditions. Prevention and management include lifestyle changes, medications, and sometimes surgical interventions."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Sarcoopenia",
+    answer: "Sarcopenia is the age-related loss of muscle mass and strength, which can lead to frailty, falls, and decreased mobility. It is a significant health concern in older adults and can be mitigated through resistance training, adequate protein intake, and overall physical activity."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Osteoporosis",
+    answer: "Osteoporosis causes bones to become weak and brittle — so brittle that a fall or even mild stresses such as bending over or coughing can cause a break. Osteoporosis-related breaks most commonly occur in the hip, wrist or spine. At higher risk for Osteoporosis are post-menopausal women."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Alzeheimer's Disease and Dementia",
+    answer: "Alzheimer's disease is a progressive neurological disorder that causes brain cells to degenerate and die, leading to memory loss, cognitive decline, and changes in behavior. Dementia is a broader term that encompasses various conditions, including Alzheimer's, characterized by a decline in cognitive function severe enough to interfere with daily life."
+  }, 
+  {
+    category: "Age-Related Diseases",
+    question: "Parkinson's Disease",
+    answer: "Parkinson's disease is a progressive neurological disorder that affects movement. It occurs when nerve cells in the brain that produce dopamine, a neurotransmitter that helps control movement, become impaired or die. Symptoms include tremors, stiffness, and difficulty with balance and coordination."
   }, 
 ];
 
