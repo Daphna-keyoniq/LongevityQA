@@ -1,7 +1,44 @@
-## Project uses CrewAI
 
-CrewAI is a framework for building multi-agent systems with ease. It's a powerful tool for building AI agents that can collaborate on complex tasks.
+## Code Structure 
 
+The app consists of a React Frontend and a Python Backend, which uses AI agents to generate answers to user questions. 
+The backend uses a FastAPI server to handle communication with the frontend. 
+
+The app contains two parts: 
+1) Predefined questions and answers, specified under app/src/components/PredefinedQA.tsx
+2) Chatbot questions and answers, using AI agents to process user questions and generate responses.
+
+## Deployment
+
+First expose the backend FastAPI server: 
+
+```bash
+gunicorn -k uvicorn.workers.UvicornWorker backend.api:app --bind 0.0.0.0:8011 --log-level debug --reload
+```
+
+Or if you want a stable version, that does not automatically change when the code changes: 
+
+```bash
+gunicorn -k uvicorn.workers.UvicornWorker backend.api:app --bind 0.0.0.0:8011 --log-level debug
+```
+
+You can verify that this works by running 
+
+```bash
+curl -X POST http://localhost:8011/ask -H "Content-Type: application/json" -d '{"question": "What is longevity?"}'
+```
+
+To deploy the frontend, first navigate to the "app" folder where the frontend code sits.
+
+```bash
+cd app
+```
+
+Then you can deploy the app using 
+
+```bash
+npm start
+```
 
 ## Installation
 
@@ -37,10 +74,4 @@ To check whether all the linting checks pass, run:
 uv run ruff check --fix
 ```
 
-To check whether all the tests pass, run: 
 
-## Test
-
-```bash
-uv run pytest tests/
-```
