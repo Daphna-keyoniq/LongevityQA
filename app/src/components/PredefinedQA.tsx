@@ -13,10 +13,10 @@ const predefinedQAData = [
   },
   {
     question: "What are the Blue Zones?",
-    answer: "Blue Zones are regions of the world where people are reported to live much longer than average. These areas are studied for their lifestyle, diet, and social habits that contribute to longevity."
-  }
+    answer: "Blue Zones are regions where residents have a high life expectancy and low rate of chronic disease. These areas are studied for their lifestyle, diet, and social habits that contribute to longevity. In his book, The Blue Zones, Buettner describes five known Blue Zones: 1) Icaria (Greece): Resdinets of this greek island eat a Mediterranean diet. 2) Ogliastra, Sardinia (Italy): The long-living residents of this region typically work on farms and drink lots of red wine. 3) Okinawa (Japan): where residents eat a lot of soy-based foods and practice tai chi. 4) Nicoya Peninsula (Costa Rica): the Nicoyans eat a lot of beans and corn tortillas, perform physical jobs into old age and have a strong sense of life purpose. 5) The Seventh-day Adventists in Loma Linda, California (USA): Residents are very religious, strict vegetarians and live in tight-knit communities."
+  },
   {
-    question: "What main longevity treatments are offered?",
+    question: "Which longevity treatments are offered?",
     answer: "Longevity treatments include lifestyle modifications, nutritional interventions, exercise programs, supplements, and advanced medical therapies. Some longevity medications exist, often in the form of repurposed drugs, with new evidence coming out that these medications also have a positive effect of slowing down aging."
   },
   {
