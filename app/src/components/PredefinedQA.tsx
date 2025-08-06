@@ -210,17 +210,16 @@ const PredefinedQA: React.FC = () => {
           {/* Questions under the category */}
           {openCategory === category && (
             <div className="qa-list">
-              {groupedQuestions[category].map((qa, index) => (
+              {groupedQuestions[category]?.map((qa, index) => (
                 <div key={index} className="qa-item">
                   <div
-                              className={`question ${openQuestionIndex === index ? "active" : ""}`}
-
+                    className={`question ${openQuestionIndex === index ? "active" : ""}`}
                     onClick={() => toggleAnswer(index)}
                   >
                     {qa.question}
                   </div>
                   {openQuestionIndex === index && (
-                    <div className="answer">{qa.answer}</div>
+                    <div className="answer">{typeof qa.answer === "string" ? qa.answer : ":)"}</div>
                   )}
                 </div>
               ))}

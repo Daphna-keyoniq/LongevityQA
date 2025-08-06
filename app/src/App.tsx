@@ -63,14 +63,9 @@ const LongevityQAApp: React.FC = () => {
 
   return (
     <div className="app-container">
-      {
               <header className="app-header">
               <h1>Longevity Question & Answering App</h1>
-              {/* <p>Welcome to the Longevity Question & Answering App! 
-              <br />
-              </p> */}
             </header>
-      }
       {/* Main Content Section */}
       <div className="main-content"> 
     {/* Left side: Chatbot */}
