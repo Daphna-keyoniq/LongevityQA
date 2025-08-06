@@ -3,13 +3,8 @@ import type { FormEvent } from "react";
 import ReactDOM from "react-dom/client";
 import TextBox from "./components/TextBox.tsx"; // Import the TextBox component
 import "./styles/App.css"; // Import the CSS file
-// import Button from "./components/Button.tsx"; // Import the Button component
 import Loader from "./components/Loader.tsx";
-// import 'ldrs/helix'
-
-// // Manually defined
-// import { helix } from 'ldrs'
-// helix.register("l-helix")
+import PredefinedQA from "./components/PredefinedQA.tsx"; // Import the PredefinedQA component
 
 /**
  * The main application component for the Longevity Question & Answering App.
@@ -37,7 +32,7 @@ const LongevityQAApp: React.FC = () => {
     }
 
     try {
-      const response = await fetch( "/api/ask", {//"http://172.161.85.236:8012",{ //
+      const response = await fetch( "/api/ask", {//"http://0.0.0.0:8012/ask",{ //
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,25 +63,35 @@ const LongevityQAApp: React.FC = () => {
 
   return (
     <div className="app-container">
-      <h1>Longevity QA</h1>
-      <p>Welcome to the Longevity Question & Answering App! 
-      <br />
-      Please type your question below:</p>
-      <form onSubmit={handleSubmit}>
-      <TextBox
-        value={question}
-        onChange={(e) => setQuestion(e.target.value)} // Update the question state
-        placeholder="Ask a question..."
-        label="Your Question:"
-      />
-      <button 
+      {
+              <header className="app-header">
+              <h1>Longevity Question & Answering App</h1>
+              {/* <p>Welcome to the Longevity Question & Answering App! 
+              <br />
+              </p> */}
+            </header>
+      }
+      {/* Main Content Section */}
+      <div className="main-content"> 
+    {/* Left side: Chatbot */}
+    <div className="chatbot-section">
+      <h1>Longevity QA Chat-Bot</h1>
+    <p>Welcome to the Longevity Question & Answering App! 
+    <br />
+    If you want further information about longevity medicine, please type your question below:</p>
+    <form onSubmit={handleSubmit}>
+    <TextBox
+    value={question}
+    onChange={(e) => setQuestion(e.target.value)} // Update the question state
+    placeholder="Ask a question..."
+    label="Your Question:"
+     />
+     <button 
         type="submit" 
-        className="submit-button"
-      >
+        className="submit-button">
         Submit
       </button>
-      </form>
-      {answer && (
+      </form>   {answer && (
       <div style={{ marginTop: "20px" }}>
         <h2>Answer:</h2>
         <p>{answer}</p>
@@ -102,9 +107,57 @@ const LongevityQAApp: React.FC = () => {
       </div>
       )}
     </div>
+    {/* Vertical divider */}
+    <div className="divider"></div>
+    {/* Right side: Predefined Questions */}
+    <div className="predefined-qa-section">
+      <PredefinedQA />
+    </div>
+  </div>
+  </div>
   );
 };
 
 export default LongevityQAApp;
 
 
+    // <div className="app-container">
+    // <div className="chatbot-section">
+    // <h1>Longevity QA</h1>
+    //   <p>Welcome to the Longevity Question & Answering App! 
+    //   <br />
+    //   Please type your question below:</p>
+    //   <form onSubmit={handleSubmit}>
+    //   <TextBox
+    //     value={question}
+    //     onChange={(e) => setQuestion(e.target.value)} // Update the question state
+    //     placeholder="Ask a question..."
+    //     label="Your Question:"
+    //   />
+    //   <button 
+    //     type="submit" 
+    //     className="submit-button">
+    //     Submit
+    //   </button>
+    //   </form>
+    //   {answer && (
+    //   <div style={{ marginTop: "20px" }}>
+    //     <h2>Answer:</h2>
+    //     <p>{answer}</p>
+    //     {isLoading && 
+    //     (
+    //         <Loader
+    //           loading={isLoading} // Pass the loading state
+    //           message="Processing your question..." // Custom message
+    //           siz="medium" // Custom size (e.g., "small", "medium", "large")
+    //         />
+    //       )
+    //       }
+    //   </div>
+    //   )}
+    // </div>
+    // <div className="divider"></div>
+    //   <div className="predefined-qa-section">
+    //     <PredefinedQA />
+    //   </div>
+    // </div>

@@ -34,5 +34,5 @@ class LongevityQAService:
         """Process the recommendation in background."""
         # Run recommendation flow
         simple_qa_model = QAModel()
-        result = await simple_qa_model.ask(question)
+        result = simple_qa_model.ask(question)
         return result

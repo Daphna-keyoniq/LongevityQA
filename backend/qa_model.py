@@ -12,6 +12,7 @@ from crews.simple_qa_crew.qa_crew import SimpleQACrew
 #from crews.question_parsing_crew.question_crew import QuestionParsingCrew
 from backend.models.questions_answers import Answer
 from utils.logging import get_logger
+from backend.llm_layers import is_greeting, is_farewell
 
 class QAState(BaseModel):
   """
@@ -38,12 +39,6 @@ class LongevityQAFlow(Flow[QAState]):
   def process_question(self):
     self.logger.info("Processing question")
 
-    # qa_crew = QuestionParsingCrew()
-    # question_parsed: Question = qa_crew.kickoff(inputs={"question": self.state.question})
-    # self.state.question_parsed = question_parsed.pydantic
-
-    # self.logger.info("Processing input completed")
-
     qa_crew = SimpleQACrew()
     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question})
     self.state.answer = answer.pydantic
@@ -51,24 +46,11 @@ class LongevityQAFlow(Flow[QAState]):
     self.logger.info("Processing input completed")
     return self.state.answer
 
-  # @listen(process_question)
-  # def answer_question(self):
-  #     qa_crew = SimpleQACrew()
-  #     answer: Answer = qa_crew.kickoff(inputs={"question": self.state.question_parsed})
-  #     self.state.answer = answer.pydantic
-
-  #     self.logger.info("Processing input completed")
-  #     return self.state.answer
-
 class QAModel:
     def __init__(self, model_name: str):
         """Initialize the QA model with a specified model name."""
         self.model_name = model_name
         self.logger = get_logger(__name__)
-
-    def add_knowledge(self, question: str, answer: str):
-        """Add a question and its answer to the QA database."""
-        self.qa_database[question] = answer
 
     def ask(self, question: str) -> str:
         """
@@ -77,10 +59,26 @@ class QAModel:
         This method uses the LongevityQAFlow class to process the question
         and generate an answer.
         """
+        self.logger.info(f"Received question: {question}")
+        if is_greeting(question):
+          self.logger.info("Detected greeting in question")
+          answer = """Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"""
+          return str(answer)
+
+        elif is_farewell(question):
+          self.logger.info("Detected farewell in question")
+          answer = """Goodbye! Have a great day!"""
+          return str(answer)
+        
         qa_flow = LongevityQAFlow(question=question)
         self.logger.info("Starting QA flow", extra={"question": question})
         #input_state = QAState(question=question)
         results = qa_flow.kickoff()
         self.logger.info("Got response", extra={"answer": results})
-        return results.answer
+        return str(results.answer)
+
+    def ask2(self, question:str) -> str:
+       answer = question
+
+       return answer
 

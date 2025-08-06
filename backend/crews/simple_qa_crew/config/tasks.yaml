@@ -5,10 +5,11 @@ question_answering_task:
     Question: {question}
     You are given a question about something related to longevity.
     Please try to answer the question in a concise, helpful and accurate manner.
-    If the question is not related to longevity, you can respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to that topic, feel free to ask!"
-    If the query is a greeting, you can respond with "Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"
-    If the query is a goodbeye, you can respond with "Goodbye! Have a great day!"
-    If the query is a thanks, you can respond with "You're welcome! If you have any more questions about longevity I would be happy to assist you."
+    If the question is not related to longevity medicine, please respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to that topic, feel free to ask!"
+    If it is related, please answer the question in a precise and knowledgable manner. 
+  #   # If the query is a greeting, you can respond with "Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"
+  #   # If the query is a goodbeye, you can respond with "Goodbye! Have a great day!"
+  #   # If the query is a thanks, you can respond with "You're welcome! If you have any more questions about longevity I would be happy to assist you."
   agent: question_answering_agent
 question_filtering_task:
   description: >
@@ -21,17 +22,17 @@ question_filtering_task:
     Longevity interventions and treatments include: medications, repurposed drugs, supplements, lifestyle changes, exercise, nutrition, stress reduction, sleep optimisation, skincare, disease prevention, proactive healthcare, and more. 
     If the question is related to longevity, return "True". If the user input is completely unrelated to longevity, return "False".
   agent: question_filtering_agent
-query_type_task:
-  description: >
-    Categorize the user's query into one of a set of predefined types to help the question answering agent provide a more useful response.
-  expected_output: >
-    Question: {question}
-    You are given a user input to the longevity question answering system.
-    Please categorize the user's query into one of the following types:
-    - "greeting": A greeting message such as "hello", "hi", "good day", "my name is", etc.
-    - "goodbye": A farewell message such as "bye", "goodbye", "see you later", etc.
-    - "thanks": A message expressing gratitude such as "thank you", "thanks", "appreciate it", etc.
-  agent: question_filtering_agent
+# query_type_task:
+#   description: >
+#     Categorize the user's query into one of a set of predefined types to help the question answering agent provide a more useful response.
+#   expected_output: >
+#     Question: {question}
+#     You are given a user input to the longevity question answering system.
+#     Please categorize the user's query into one of the following types:
+#     - "greeting": A greeting message such as "hello", "hi", "good day", "my name is", etc.
+#     - "goodbye": A farewell message such as "bye", "goodbye", "see you later", etc.
+#     - "thanks": A message expressing gratitude such as "thank you", "thanks", "appreciate it", etc.
+#   agent: question_filtering_agent
 question_labelling_task:
   description: >
     Answer the user's question on longevity based on the provided context.
@@ -45,23 +46,7 @@ question_labelling_task:
     - Nutrition: Questions about food, nutrition, and diet
     - Exercise: Questions about exercise, fitness, and physical activity
     - Sleep: Questions related to sleep
+    - Other longevity or health topic
+    - Not longevity Related
     Please provide a list of the labels most relevant to the question, separated by commas. If the question does not fit any of these categories, return an empty list.
   agent: question_labelling_agent
-supplement_knowledge_task:
-  description: >
-    Process knowledge relevant to supplements in longevity medicine, to provide accurate and up-to-date information for the question answering agent.
-  expected_output: >
-    Question: {question}
-    You are given a user input to the longevity question answering system.
-    Please process the knowledge relevant to supplements in longevity medicine, including the latest scientific findings, practical applications, and any relevant studies or data.
-    Your output is a short summary of the knwowledge relevant to the question being asked. Ensure that the information is accurate, concise, and helpful to answering the question. 
-  agent: knowledge_processing_agent
-disease_knowledge_task:
-  description: >
-    Process knowledge relevant to diseases and conditions that may affect aging and long-term health, to provide accurate and up-to-date information for the question answering agent.
-  expected_output: >
-    Question: {question}
-    You are given a user input to the longevity question answering system.
-    Please process the knowledge available to you, relevant to age related diseases and conditions, their prevention and their management. 
-    Your output is a short summary of the knwowledge relevant to the question being asked. Ensure that the information is accurate, concise, and helpful to answering the question. 
-  agent: knowledge_processing_agent

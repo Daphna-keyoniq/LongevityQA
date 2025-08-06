@@ -1,0 +1,101 @@
+/* Container for the predefined questions and answers */
+.predefined-qa-container {
+    width: 100%; /* Take up the full width of the right section */
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove padding around the container */
+    background-color: #f9f9f9; /* Matches the app background */
+  }
+  
+  /* Title for the predefined questions section */
+  .predefined-qa-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #54769D; /* Same blue shade as the rest of the text */
+  }
+  
+  /* Indent the question list slightly to the right */
+.qa-list {
+  margin-left: 0px; /* Move the entire list of questions to the right */
+}
+  /* Individual question and answer item */
+  .qa-item {
+    margin-left: 20px;
+    margin: 0; /* Remove spacing between items */
+  }
+  
+  /* Styling for the question box */
+  .question {
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Matches the app background */
+    border: 1px solid #ccc; /* Thin border around the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: left; /* Align text to the left */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 5px; /* Add a small gap between boxes */
+  }
+  
+  .question.active {
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Matches the app background */
+    border: 1px solid #54769D; /* Thin border around the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: left; /* Align text to the left */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 5px; /* Add a small gap between boxes */
+  }
+
+  .question:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+    border-color: #bbb; /* Slightly darker border on hover */
+  }
+  
+  /* Styling for the answer box */
+  .answer {
+    padding: 10px;
+    background-color: #f9f9f9; /* Matches the app background */
+    /* border: 1px solid #ccc; /* Thin border around the answer */
+    /* border-radius: 5px; Slightly rounded corners */ 
+    color: #54769D;
+    transition: max-height 0.8s ease, opacity 0.8s ease; /* Smooth transition */
+    margin-top: 5px; /* Add a small gap between the question and answer */
+  }
+
+  .answer.open {
+    max-height: 500px; /* Arbitrary large value to allow expansion */
+    opacity: 1; /* Fully visible when open */
+    padding: 10px; /* Add padding when visible */
+  }
+
+  .category-title {
+    display: inline-block; /* Make the square wrap the text */
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: 1px solid #54769D;
+    border-radius: 4px; /* Slight rounding for a thin square look */
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .category-title:hover {
+    background-color: #aaa;
+    border-color: #54769D;
+    border-width: 2px;
+  }
+  
+  .category-title.active {
+    background-color: #f0f0f0;
+    border-color: #54769D;
+    color: #54769D;
+    border-width: 2px;
+    transition: background-color 0.8s ease, border-color 0.8s ease, padding 0.8s ease; /* Smooth transition */
+  }
