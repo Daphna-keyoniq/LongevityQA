@@ -113,7 +113,7 @@ const PredefinedQA: React.FC = () => {
           style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
         >
           <span style={{ marginRight: "8px" }}>
-            {openCategory === category ? <AiOutlineDown /> : <AiOutlineRight />
+            {openCategory === category //? <AiOutlineDown /> : <AiOutlineRight />
             }
           </span>
           <span>{category}</span>

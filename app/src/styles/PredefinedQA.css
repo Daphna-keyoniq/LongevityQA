@@ -87,12 +87,13 @@
   }
   
   .category-title:hover {
-    background-color: #f9f9f9;
-    border-color: #aaa;
+    background-color: #aaa;
+    border-color: #54769D;
+    border-width: 2px;
   }
   
   .category-title.active {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     border-color: #54769D;
     color: #54769D;
     border-width: 2px;
