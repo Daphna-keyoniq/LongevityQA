@@ -12,7 +12,7 @@ const predefinedQAData = [
   {
     category: "General Information",
     question: "Healthspan",
-    answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer, as opposed to lifespan optimisation which focuses on living longer regardless of health condition."
+    answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer, as opposed to lifespan optimization which focuses on living longer regardless of health condition."
   },
   {
     category: "General Information",
@@ -47,7 +47,7 @@ const predefinedQAData = [
   {
     category: "Longevity Medications",
     question: "Tell me about Rapamycin",
-    answer: "Rapamycin, also known as Sirolimus, is an mTOR inhibitor increasingly being considered as a universal longevity drug. It was originally developed as an antifungal drug, and later also as an immunosuppressant in kidney transplant patient. It inhibits the mTOR pathway, which is involved in cell growth and aging processes. It has more recently emerged as a longevity drug, with anti-aging properties. It was shown that rapamycin prolongs life in mice, yeast, worms and flies, and that it prevents age-related conditions in rodents, dogs, and humans. In one short-lived mutant strain of mice, the mTOR inhibitor rapamycin was found to extend maximum life span nearly three-fold."
+    answer: "Rapamycin, also known as Sirolimus, is an mTOR inhibitor increasingly being considered as a universal longevity drug. It was originally developed as an antifungal drug, and later also as an immunosuppressant in kidney transplant patients. It inhibits the mTOR pathway, which is involved in cell growth and aging processes. It has more recently emerged as a longevity drug, with anti-aging properties. It was shown that rapamycin prolongs life in mice, yeast, worms and flies, and that it prevents age-related conditions in rodents, dogs, and humans. In one short-lived mutant strain of mice, the mTOR inhibitor rapamycin was found to extend maximum life span nearly three-fold."
   },
   {
     category: "Supplements",
@@ -82,7 +82,7 @@ const predefinedQAData = [
   {
     category: "Exercise",
     question: "What sport is the best for longevity?",
-    answer: "The short answer, is that the best sport for longevity is the one that you will do consistantly. Any exercise, even if walking up the stairs instead of taking the elevators, has benefits to your long term health. \n In longer terms, it is recommended to practice a combination of resistance and endurance training. Moreover, sports that require coordination, strategic planning and social interaction are thought to be especially beneficial. \n :The Copenhagen City Heart Study examined the effects of different sports on lifespan (controlling for demographic factors and weekly volume), and found that the best sports for life expectancy increase were: tennis (9.7 years), badminton (6.2 years), soccer (4.7 years), cycling (3.7 years), swimming (3.4 years), jogging (3.2 years), calisthenics (3.1 years), and health club activities (1.5 years)."
+    answer: "The short answer, is that the best sport for longevity is the one that you will do consistantly. Any exercise, even if walking up the stairs instead of taking the elevator, has benefits to your long term health. \n In longer terms, it is recommended to practice a combination of resistance and endurance training. Moreover, sports that require coordination, strategic planning and social interaction are thought to be especially beneficial. \n :The Copenhagen City Heart Study examined the effects of different sports on lifespan (controlling for demographic factors and weekly volume), and found that the best sports for life expectancy increase were: tennis (9.7 years), badminton (6.2 years), soccer (4.7 years), cycling (3.7 years), swimming (3.4 years), jogging (3.2 years), calisthenics (3.1 years), and health club activities (1.5 years)."
   },
   {
     category: "Nutrition",
