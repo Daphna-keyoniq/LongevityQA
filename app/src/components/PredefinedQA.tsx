@@ -60,6 +60,16 @@ const predefinedQAData = [
     question: "What is Berberine good for?",
     answer: "Berberine is anti-inflammatory and has potential benefits for metabolic health, including blood sugar regulation, cholesterol levels, and weight management. It may also help improve cardiovascular health and gut microbiome balance."
   }, 
+  {
+    category: "Exercise",
+    question: "Aerboic vs. Resistance Training",
+    answer: "The two main types of exercise are aerobic (cardiovascular) and anaerobic strength training, also called resistance training. Aerobic exercise includes activities like running, swimming, and cycling, which improve cardiovascular health and endurance. Anaerobic exercise includes weightlifting and resistance training, which build muscle strength and mass."
+  },
+  {
+    category: "Nutrition",
+    question: "Sugar",
+    answer: "Sugar, particularly added sugars, can have negative effects on health, including increased risk of obesity, type 2 diabetes, and heart disease. It is recommended to limit added sugars in the diet and focus on whole foods with natural sugars, such as fruits."
+  }, 
 ];
 
 const PredefinedQA: React.FC = () => {
