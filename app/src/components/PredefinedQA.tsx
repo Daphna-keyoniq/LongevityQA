@@ -7,17 +7,22 @@ import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 const predefinedQAData = [
   {
     category: "General Information",
-    question: "What is longevity?",
-    answer: "Longevity care is a field of medicine that focuses on extending the healthy lifespan of individuals, with a proactive approach to healthcare. The focus being on preventing diseases, delaying the process of aging, and promoting overall well-being, rather than treating diseases after they occur."
+    question: "Longevity",
+    answer: "Longevity medicine is a field of medicine that focuses on extending the healthy lifespan of individuals, with a proactive approach to healthcare. The focus being on preventing diseases, delaying the process of aging, and promoting overall well-being, rather than treating diseases after they occur."
   },
   {
     category: "General Information",
-    question: "What is healthspan?",
+    question: "Healthspan?",
     answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer."
   },
   {
     category: "General Information",
-    question: "What are the Blue Zones?",
+    question: "Preventative and Proactive Healthcare",
+    answer: "Preventative care focuses on early detection and prevention of health risks before they develop into disorders, through early screening, testing, and lifestyle modifications. Proactive healthcare goes a step further by actively managing health through personalised lifestyle adjustments and advanced medical therapies, to not only prevent diseases not only before the occur, but before there is a disease risk. Preventative care would for example be putting someone who is obese and pre-diabetic on a weight loss program, while proactive healthcare would be incorporating and exercise regime and healthy diet even before signs of metabolic issues arise."
+  },
+  {
+    category: "General Information",
+    question: "Blue Zones",
     answer: "Blue Zones are regions where residents have a high life expectancy and low rate of chronic disease. These areas are studied for their lifestyle, diet, and social habits that contribute to longevity. In his book, The Blue Zones, Buettner describes five known Blue Zones: 1) Icaria (Greece): Resdinets of this greek island eat a Mediterranean diet. 2) Ogliastra, Sardinia (Italy): The long-living residents of this region typically work on farms and drink lots of red wine. 3) Okinawa (Japan): where residents eat a lot of soy-based foods and practice tai chi. 4) Nicoya Peninsula (Costa Rica): the Nicoyans eat a lot of beans and corn tortillas, perform physical jobs into old age and have a strong sense of life purpose. 5) The Seventh-day Adventists in Loma Linda, California (USA): Residents are very religious, strict vegetarians and live in tight-knit communities."
   },
   {
@@ -67,7 +72,7 @@ const predefinedQAData = [
   }, 
   {
     category: "Exercise",
-    question: "Aerboic vs. Resistance Training",
+    question: "Aerobic vs. Resistance Training",
     answer: "The two main types of exercise are aerobic (cardiovascular) and anaerobic strength training, also called resistance training. Aerobic exercise includes activities like running, swimming, and cycling, which improve cardiovascular health and endurance. Anaerobic exercise includes weightlifting and resistance training, which build muscle strength and mass."
   },
   {

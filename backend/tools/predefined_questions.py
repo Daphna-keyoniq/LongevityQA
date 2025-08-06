@@ -1,6 +1,5 @@
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
-import os
 
 ## Internal imports
 from backend.models.questions_answers import QueryType
