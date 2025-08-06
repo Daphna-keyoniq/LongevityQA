@@ -50,26 +50,6 @@ const predefinedQAData = [
     answer: "Rapamycin, also known as Sirolimus, is an mTOR inhibitor increasingly being considered as a universal longevity drug. It was originally developed as an antifungal drug, and later also as an immunosuppressant in kidney transplant patients. It inhibits the mTOR pathway, which is involved in cell growth and aging processes. It has more recently emerged as a longevity drug, with anti-aging properties. It was shown that rapamycin prolongs life in mice, yeast, worms and flies, and that it prevents age-related conditions in rodents, dogs, and humans. In one short-lived mutant strain of mice, the mTOR inhibitor rapamycin was found to extend maximum life span nearly three-fold."
   },
   {
-    category: "Supplements",
-    question: "Which supplements should I take?",
-    answer: "Supplement recommendations are highly individual and may depend on your personal health status, health needs, and demographic factors. We therefore recommend building a personalized longevity plan that can target your individual concerns and goals. Supplements that are commonly used in longevity practice are Omega-3, CoQ10, Nicotinamide, Vitamin D, Creatine, Berberine, Magnesium, and more."
-  },
-  {
-    category: "Supplements",
-    question: "Which supplements are beneficial for metabolic health?",
-    answer: "Omega-3 fatty acids, Berberine, Chromium, Alpha-Lipoic Acid, and Magnesium. These supplements can help improve insulin sensitivity, reduce inflammation, and support overall metabolic function."
-  },
-  {
-    category: "Supplements",
-    question: "Which supplements can help maintain long-term bone density?",
-    answer: "Supplements that can help maintain long-term bone density include Vitamin D, Calcium, Magnesium, Vitamin K2, and Boron. These nutrients play crucial roles in bone health by supporting calcium absorption, bone mineralization, and overall skeletal strength."
-  },
-  {
-    category: "Supplements",
-    question: "What is Berberine good for?",
-    answer: "Berberine is anti-inflammatory and has potential benefits for metabolic health, including blood sugar regulation, cholesterol levels, and weight management. It may also help improve cardiovascular health and gut microbiome balance."
-  },
-  {
     category: "Exercise",
     question: "Aerobic vs. Resistance Training",
     answer: "The two main types of exercise are aerobic/cardiovascular exercise and resistance/strength training. Aerobic exercise improves cardiovascular health and endurance, and includes activities like running, swimming, and cycling. It is typically performed against a relatively low load over a long duration. Strength training, in turn, improves physical strength, builds muscle strength and muscle mass, and includes activities such as weightlifting. Many sport activities combine both endurance and strength training, such as rowing, martial arts, and climbing. Both types of exercise are essential for overall health and longevity. \n Calorie Burning: Endurance training burns more calories, but building muscle helps increase the daily calorie burn over time. \n Cardiovascular Health: In general, aerobic exercise induces greater improvements in cardiorespiratory fitness and cardio-metabolic variables, however, a combined program of aerobic and resistance training was shown to be ideal for cardiometabolic health. \n Muscle Mass: Resistance training is more effective for building and maintaining muscle mass and physical strength. \n Bone Health: Resistance training is particularly beneficial for increasing bone density, and helps reduce the risk of osteoporosis. \n Mental Health: Both types of exercise have positive effects on mental health, but aerobic exercise is often associated with greater improvements in mood and anxiety reduction."
@@ -128,6 +108,26 @@ const predefinedQAData = [
     category: "Age-Related Diseases",
     question: "What are the most common age-related diseases?",
     answer: "The most common age-related diseases include cardiovascular diseases, diabetes, Alzheimer's disease and other dementias, osteoporosis, arthritis, and certain cancers. These conditions are often associated with aging and can significantly impact quality of life."
+  },
+  {
+    category: "Supplements",
+    question: "Which supplements should I take?",
+    answer: "Supplement recommendations are highly individual and may depend on your personal health status, health needs, and demographic factors. We therefore recommend building a personalized longevity plan that can target your individual concerns and goals. Supplements that are commonly used in longevity practice are Omega-3, CoQ10, Nicotinamide, Vitamin D, Creatine, Berberine, Magnesium, and more."
+  },
+  {
+    category: "Supplements",
+    question: "Which supplements are beneficial for metabolic health?",
+    answer: "Omega-3 fatty acids, Berberine, Chromium, Alpha-Lipoic Acid, and Magnesium. These supplements can help improve insulin sensitivity, reduce inflammation, and support overall metabolic function."
+  },
+  {
+    category: "Supplements",
+    question: "Which supplements can help maintain long-term bone density?",
+    answer: "Supplements that can help maintain long-term bone density include Vitamin D, Calcium, Magnesium, Vitamin K2, and Boron. These nutrients play crucial roles in bone health by supporting calcium absorption, bone mineralization, and overall skeletal strength."
+  },
+  {
+    category: "Supplements",
+    question: "What is Berberine good for?",
+    answer: "Berberine is anti-inflammatory and has potential benefits for metabolic health, including blood sugar regulation, cholesterol levels, and weight management. It may also help improve cardiovascular health and gut microbiome balance."
   },
   {
     category: "Age-Related Diseases",

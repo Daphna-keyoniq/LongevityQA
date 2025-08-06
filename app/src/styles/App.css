@@ -101,3 +101,16 @@ footer {
     width: 100%;
     font-size: 0.9rem;
 }
+
+input[type="text"] {
+  width: 100%; /* Default width for responsiveness */
+  max-width: 600px; /* Optional: Limit the maximum width */
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
