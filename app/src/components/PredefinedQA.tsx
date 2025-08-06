@@ -107,7 +107,22 @@ const predefinedQAData = [
   {
     category: "Nutrition",
     question: "Protein",
-    answer: "Protein is also important for longevity and maintaining strength as you age. When you eat protein from food, it’s broken down into individual amino acids, and these amino acids are used to form the structural elements of your body such as muscles, tendons, ligaments, and collagen. Without adequate protein, you may be at increased risk for sarcopenia, i.e. age-related muscle loss, which, in turn, may impair physical activity and increase risk of falls and death. Consuming adequate protein also helps prevent dangerous spikes in blood sugar."
+    answer: "Protein is crucial for maintaining strength as you age. When you eat protein, it is broken down into individual amino acids, and these amino acids are the building blocks of structural elements in the body such as muscles, tendons, and ligaments."
+  },
+  {
+    category: "Nutrition",
+    question: "Green Tea",
+    answer: "Green tea contains a type of polyphenol called a catechin. Catechins are antioxidants that help prevent cell damage and provideTrusted Source other health benefits. The most well-known and abundant catechin in green tea is epigallocatechin-3-gallate (EGCG), which research has found may be involved in improving various health conditions or markers of disease."
+  },
+  {
+    category: "Nutrition",
+    question: "Mediterranean Diet",
+    answer: "The Mediterranean diet is high in fruits and vegetables, whole grains, legumes, and healthy fats like olive oil. The diet is associated with numerous health benefits, including reduced risk of heart disease, improved cognitive function, and longer lifespan."  
+  },
+  {
+    category: "Nutrition",
+    question: "Ketogenic Diet",
+    answer: "Ketogenic diets are high in fats and low in carbohydrates, and are designed to create a state of ketosis through reduced carb intake. When this happens, your body becomes incredibly efficient at burning fat for energy. However, they may not be suitable for everyone, and are in particular not recommended for patients with high cholesterol, due to their high fat contents. It is recommended to advise a medical professional before adhering to a Ketogenic diet long term."  
   },
   {
     category: "Age-Related Diseases",
