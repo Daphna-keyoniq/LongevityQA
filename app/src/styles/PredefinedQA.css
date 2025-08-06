@@ -14,8 +14,13 @@
     color: #54769D; /* Same blue shade as the rest of the text */
   }
   
+  /* Indent the question list slightly to the right */
+.qa-list {
+  margin-left: 0px; /* Move the entire list of questions to the right */
+}
   /* Individual question and answer item */
   .qa-item {
+    margin-left: 20px;
     margin: 0; /* Remove spacing between items */
   }
   
@@ -44,5 +49,40 @@
     /* border: 1px solid #ccc; /* Thin border around the answer */
     /* border-radius: 5px; Slightly rounded corners */ 
     color: #54769D;
+    transition: max-height 0.8s ease, opacity 0.8s ease; /* Smooth transition */
     margin-top: 5px; /* Add a small gap between the question and answer */
+  }
+
+  .answer.open {
+    max-height: 500px; /* Arbitrary large value to allow expansion */
+    opacity: 1; /* Fully visible when open */
+    padding: 10px; /* Add padding when visible */
+  }
+
+  .category-title {
+    display: inline-block; /* Make the square wrap the text */
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Slight rounding for a thin square look */
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.8s, color 0.8s, border-color 0.8s;
+  }
+  
+  .category-title:hover {
+    background-color: #f9f9f9;
+    border-color: #aaa;
+  }
+  
+  .category-title.active {
+    background-color: #f9f9f9;
+    border-color: #54769D;
+    color: #54769D;
+    border-width: 2px;
+    transition: background-color 0.8s ease, border-color 0.8s ease, padding 0.8s ease; /* Smooth transition */
   }
