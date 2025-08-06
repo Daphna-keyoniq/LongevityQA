@@ -103,7 +103,8 @@ const PredefinedQA: React.FC = () => {
           style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
         >
           <span style={{ marginRight: "8px" }}>
-            {openCategory === category ? <AiOutlineDown /> : <AiOutlineRight />}
+            {openCategory === category ? <AiOutlineDown /> : <AiOutlineRight />
+            }
           </span>
           <span>{category}</span>
         </h2>
@@ -113,7 +114,8 @@ const PredefinedQA: React.FC = () => {
               {groupedQuestions[category].map((qa, index) => (
                 <div key={index} className="qa-item">
                   <div
-                    className="question"
+                              className={`question ${openQuestionIndex === index ? "active" : ""}`}
+
                     onClick={() => toggleAnswer(index)}
                   >
                     {qa.question}

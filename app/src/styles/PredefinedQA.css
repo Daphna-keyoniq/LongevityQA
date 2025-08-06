@@ -37,6 +37,18 @@
     margin-bottom: 5px; /* Add a small gap between boxes */
   }
   
+  .question.active {
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Matches the app background */
+    border: 1px solid #54769D; /* Thin border around the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: left; /* Align text to the left */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 5px; /* Add a small gap between boxes */
+  }
+
   .question:hover {
     background-color: #f0f0f0; /* Light hover effect */
     border-color: #bbb; /* Slightly darker border on hover */
@@ -63,7 +75,7 @@
     display: inline-block; /* Make the square wrap the text */
     padding: 8px 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #54769D;
     border-radius: 4px; /* Slight rounding for a thin square look */
     background-color: #f9f9f9;
     color: #333;
@@ -71,7 +83,7 @@
     font-weight: normal;
     text-align: left;
     cursor: pointer;
-    transition: background-color 0.8s, color 0.8s, border-color 0.8s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
   
   .category-title:hover {
