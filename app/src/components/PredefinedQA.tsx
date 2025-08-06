@@ -8,7 +8,7 @@ const predefinedQAData = [
     answer: "Longevity care is a field of medicine that focuses on extending the healthy lifespan of individuals, with a proactive approach to healthcare. The focus being on preventing diseases, delaying the process of aging, and promoting overall well-being, rather than treating diseases after they occur."
   },
   {
-    question: "How is healthspan?",
+    question: "What is healthspan?",
     answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer."
   },
   {
