@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from "react";
 import "./../styles/PredefinedQA.css"; // Import styles for the component
-import { HiOutlineChevronDoubleDown, HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 
 // Define the predefined questions and answers directly in the file
@@ -12,8 +11,8 @@ const predefinedQAData = [
   },
   {
     category: "General Information",
-    question: "Healthspan?",
-    answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer."
+    question: "Healthspan",
+    answer: "Healthspan is the number of years in which one lives in good health and has a high quality of life, free from chronic diseases and disabilities. It emphasizes living better and healthier for longer, as opposed to lifespan optimisation which focuses on living longer regardless of health condition."
   },
   {
     category: "General Information",
@@ -38,17 +37,17 @@ const predefinedQAData = [
   {
     category: "Longevity Medications",
     question: "What are repurposed longevity drugs?",
-    answer: "Repurposed longevity drugs, such as metformin and rapamycin, refer to medications that were developed and approved for one disease, and later found to also be useful as longevity medications. Research on these drugs as longevity treatments is largely new, and often still ongoing, but they have shown promise in extending lifespan and healthspan in various studies."
+    answer: "Repurposed longevity drugs, such as metformin and rapamycin, refer to medications that were developed and approved for one disease, and later found to also be useful for improving healthspan and life expectancy. Research on these drugs as longevity treatments is largely new, with results often achieved on animals and human studies ongoing, but they have shown promise in potential benefits to longevity."
   },
   {
     category: "Longevity Medications",
     question: "Tell me about Metformin",
-    answer: "Metformin is a medication primarily used to treat type 2 diabetes, that has recently also gained interest as a longevity medicine due to its potential effects on aging and healthspan extension. Research suggests that metformin may improve metabolic health, reduce inflammation, and mimic some effects of caloric restriction, which are beneficial for longevity. It is being studied for its potential to delay age-related diseases in humans."
+    answer: "Metformin is a medication primarily used to treat type 2 diabetes, that has recently also gained interest as a longevity medicine due to its potential effects on aging and healthspan extension. Research suggests that metformin may improve metabolic health, reduce inflammation, and mimic some effects of caloric restriction. It is being studied as a way to delay age-related diseases in humans."
   },
   {
     category: "Longevity Medications",
     question: "Tell me about Rapamycin",
-    answer: "Rapamycin, also known as Sirolimus, is an mTOR inhibitor increasingly being considered as a universal longevity drug. It was originally developed as an antifungal drug, and later also as an immunosuppressant. It is known to inhibit the mTOR pathway, which is involved in cell growth and aging processes. In longevity medicine, Rapamycin is explored for its potential to delay aging and age-related diseases."
+    answer: "Rapamycin, also known as Sirolimus, is an mTOR inhibitor increasingly being considered as a universal longevity drug. It was originally developed as an antifungal drug, and later also as an immunosuppressant in kidney transplant patient. It inhibits the mTOR pathway, which is involved in cell growth and aging processes. It has more recently emerged as a longevity drug, with anti-aging properties. It was shown that rapamycin prolongs life in mice, yeast, worms and flies, and that it prevents age-related conditions in rodents, dogs, and humans. In one short-lived mutant strain of mice, the mTOR inhibitor rapamycin was found to extend maximum life span nearly three-fold."
   },
   {
     category: "Supplements",
@@ -142,7 +141,7 @@ const predefinedQAData = [
   },
   {
     category: "Age-Related Diseases",
-    question: "Parkinson's Disease",
+    question: "Parkinson's",
     answer: "Parkinson's disease is a progressive neurological disorder that affects movement. It occurs when nerve cells in the brain that produce dopamine, a neurotransmitter that helps control movement, become impaired or die. Symptoms include tremors, stiffness, and difficulty with balance and coordination."
   }
 ];
