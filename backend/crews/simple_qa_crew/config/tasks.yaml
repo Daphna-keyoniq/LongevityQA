@@ -5,7 +5,8 @@ question_answering_task:
     Question: {question}
     You are given a question about something related to longevity.
     Please try to answer the question in a concise, helpful and accurate manner.
-    If the question is not related to longevity, you can respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to that topic, feel free to ask!"
+    If the question is not related to longevity medicine, please respond with ""I'm sorry, I cannot provide that information. I specialize in answering questions about longevity medicine. If you have a question related to that topic, feel free to ask!"
+    If it is related, please answer the question in a precise and knowledgable manner. 
   #   # If the query is a greeting, you can respond with "Hello! I am a longevity medicine question answering agent. I can help you with questions about improving healthspan, proactive health and related topics. What would you like to know?"
   #   # If the query is a goodbeye, you can respond with "Goodbye! Have a great day!"
   #   # If the query is a thanks, you can respond with "You're welcome! If you have any more questions about longevity I would be happy to assist you."
@@ -45,5 +46,7 @@ question_labelling_task:
     - Nutrition: Questions about food, nutrition, and diet
     - Exercise: Questions about exercise, fitness, and physical activity
     - Sleep: Questions related to sleep
+    - Other longevity or health topic
+    - Not longevity Related
     Please provide a list of the labels most relevant to the question, separated by commas. If the question does not fit any of these categories, return an empty list.
   agent: question_labelling_agent
