@@ -1,12 +1,23 @@
 /* App.css */
 /* Main container for the app */
 /* Main container for the app */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Matches the app background */
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
 .app-container {
     display: flex;
     flex-direction: column; /* Stack header and main content vertically */
     height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    width: 95vw; /* Full viewport width */
+    background-color: #f9f9f9; /* Matches the app background */
+    padding: 0; /* Remove any default padding */
   }
   
   /* Header Section */
